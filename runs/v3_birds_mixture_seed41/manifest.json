@@ -1,0 +1,29 @@
+{
+  "protocol": "v3_retention_mixture_1",
+  "checkpoint_sha256": "ac2c8fc2809fb32be5ea36a6b136cf9cd6c989082c995737f5ae462f0cb65a42",
+  "images": [
+    65,
+    70
+  ],
+  "image_sha256": {
+    "65": "30efe8ede3c2764d7b0626798ae3745ad2b8128267e472e7c72fd705c0542a6b",
+    "70": "e688e24539610a839748b665c7f0aaae4b1508aff321dd623d30c1568e84c9fd"
+  },
+  "v2_results_sha256": "5399d288d2751ba016d87939b727950c0d41c9d2bec461cb44ba49154461fb8c",
+  "seed": 41,
+  "discovery_per_p": 6000,
+  "fit_per_p": 4000,
+  "validation_per_p": 1500,
+  "test_per_p": 2048,
+  "retentions": [
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "replacement": "mean",
+  "readout": "margin",
+  "fixed_competitor": 3,
+  "ridge": 0.0001,
+  "max_terms": 50
+}

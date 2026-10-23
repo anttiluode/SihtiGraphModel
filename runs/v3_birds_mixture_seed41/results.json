@@ -1,0 +1,6190 @@
+{
+  "protocol": "v3_retention_mixture_1",
+  "complete": true,
+  "checkpoint": {
+    "seed": 41,
+    "best_epoch": 7,
+    "validation_accuracy": 0.7746,
+    "limit": 0
+  },
+  "retentions": [
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "images": {
+    "65_mean": {
+      "image_index": 65,
+      "class_id": 2,
+      "replacement": "mean",
+      "teacher_correct_intact": true,
+      "source": "fixed v1 bird index 65",
+      "graphs": {
+        "mixture_global": {
+          "intercept": 1.2860311100059632,
+          "terms": [
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": 0.398565706973202
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.08287114313045191
+            },
+            {
+              "indices": [
+                13
+              ],
+              "names": [
+                "B0:r3c1"
+              ],
+              "coefficient": 0.45442041512822523
+            },
+            {
+              "indices": [
+                5
+              ],
+              "names": [
+                "B0:r1c1"
+              ],
+              "coefficient": -0.328511747695816
+            },
+            {
+              "indices": [
+                12
+              ],
+              "names": [
+                "B0:r3c0"
+              ],
+              "coefficient": -0.10872697335000567
+            },
+            {
+              "indices": [
+                28
+              ],
+              "names": [
+                "B1:r3c0"
+              ],
+              "coefficient": -0.13272036943914356
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": 0.18761852388914543
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.19176587092089242
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": 0.1479300286842949
+            },
+            {
+              "indices": [
+                15
+              ],
+              "names": [
+                "B0:r3c3"
+              ],
+              "coefficient": -0.0333096669797792
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.23398475501181118
+            },
+            {
+              "indices": [
+                41
+              ],
+              "names": [
+                "B2:r2c1"
+              ],
+              "coefficient": 0.1259198293857405
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.1546041782599994
+            },
+            {
+              "indices": [
+                14
+              ],
+              "names": [
+                "B0:r3c2"
+              ],
+              "coefficient": 0.18979292602247985
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": -0.2212805706445594
+            },
+            {
+              "indices": [
+                3
+              ],
+              "names": [
+                "B0:r0c3"
+              ],
+              "coefficient": -0.17373593933034404
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.0765191903734062
+            },
+            {
+              "indices": [
+                23
+              ],
+              "names": [
+                "B1:r1c3"
+              ],
+              "coefficient": -0.12602727747926676
+            },
+            {
+              "indices": [
+                1
+              ],
+              "names": [
+                "B0:r0c1"
+              ],
+              "coefficient": -0.04794734907586777
+            },
+            {
+              "indices": [
+                45
+              ],
+              "names": [
+                "B2:r3c1"
+              ],
+              "coefficient": -0.12982808302160723
+            },
+            {
+              "indices": [
+                2
+              ],
+              "names": [
+                "B0:r0c2"
+              ],
+              "coefficient": -0.09064134466648811
+            },
+            {
+              "indices": [
+                34
+              ],
+              "names": [
+                "B2:r0c2"
+              ],
+              "coefficient": 0.14101518301355095
+            },
+            {
+              "indices": [
+                31
+              ],
+              "names": [
+                "B1:r3c3"
+              ],
+              "coefficient": -0.07899789162161452
+            },
+            {
+              "indices": [
+                30
+              ],
+              "names": [
+                "B1:r3c2"
+              ],
+              "coefficient": -0.07581148598681413
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.04450690704483438
+            },
+            {
+              "indices": [
+                7,
+                55
+              ],
+              "names": [
+                "B0:r1c3",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.03848369912823685
+            },
+            {
+              "indices": [
+                54,
+                55
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.07281754236214802
+            },
+            {
+              "indices": [
+                17
+              ],
+              "names": [
+                "B1:r0c1"
+              ],
+              "coefficient": 0.08867648596071231
+            },
+            {
+              "indices": [
+                4
+              ],
+              "names": [
+                "B0:r1c0"
+              ],
+              "coefficient": 0.13520133334254153
+            },
+            {
+              "indices": [
+                19
+              ],
+              "names": [
+                "B1:r0c3"
+              ],
+              "coefficient": -0.06171844246989561
+            },
+            {
+              "indices": [
+                20
+              ],
+              "names": [
+                "B1:r1c0"
+              ],
+              "coefficient": 0.08821206371979542
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.07797658440447883
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.11108141998073491
+            },
+            {
+              "indices": [
+                38,
+                54
+              ],
+              "names": [
+                "B2:r1c2",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.08933038424851071
+            },
+            {
+              "indices": [
+                32
+              ],
+              "names": [
+                "B2:r0c0"
+              ],
+              "coefficient": 0.11766305172481462
+            },
+            {
+              "indices": [
+                11
+              ],
+              "names": [
+                "B0:r2c3"
+              ],
+              "coefficient": 0.0934536130925602
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.10204508952158242
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.05652456401708628
+            },
+            {
+              "indices": [
+                38
+              ],
+              "names": [
+                "B2:r1c2"
+              ],
+              "coefficient": 0.08841414494939104
+            },
+            {
+              "indices": [
+                58,
+                59
+              ],
+              "names": [
+                "B3:r2c2",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.09370822776122266
+            },
+            {
+              "indices": [
+                4,
+                20
+              ],
+              "names": [
+                "B0:r1c0",
+                "B1:r1c0"
+              ],
+              "coefficient": -0.006903014261954631
+            },
+            {
+              "indices": [
+                13,
+                14
+              ],
+              "names": [
+                "B0:r3c1",
+                "B0:r3c2"
+              ],
+              "coefficient": -0.19228526847595975
+            },
+            {
+              "indices": [
+                12,
+                28
+              ],
+              "names": [
+                "B0:r3c0",
+                "B1:r3c0"
+              ],
+              "coefficient": -0.2115340233079722
+            },
+            {
+              "indices": [
+                37
+              ],
+              "names": [
+                "B2:r1c1"
+              ],
+              "coefficient": 0.10138789138098914
+            },
+            {
+              "indices": [
+                9,
+                41
+              ],
+              "names": [
+                "B0:r2c1",
+                "B2:r2c1"
+              ],
+              "coefficient": 0.08757009279426965
+            },
+            {
+              "indices": [
+                6,
+                54
+              ],
+              "names": [
+                "B0:r1c2",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.07754115067352495
+            },
+            {
+              "indices": [
+                11,
+                59
+              ],
+              "names": [
+                "B0:r2c3",
+                "B3:r2c3"
+              ],
+              "coefficient": -0.05075762514482221
+            },
+            {
+              "indices": [
+                37,
+                38
+              ],
+              "names": [
+                "B2:r1c1",
+                "B2:r1c2"
+              ],
+              "coefficient": -0.11785677158356211
+            },
+            {
+              "indices": [
+                9,
+                25
+              ],
+              "names": [
+                "B0:r2c1",
+                "B1:r2c1"
+              ],
+              "coefficient": 0.12033957332391529
+            },
+            {
+              "indices": [
+                8,
+                15
+              ],
+              "names": [
+                "B0:r2c0",
+                "B0:r3c3"
+              ],
+              "coefficient": -0.28991260597325513
+            }
+          ]
+        },
+        "mixture_local": {
+          "intercept": 1.2760844044208088,
+          "terms": [
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": 0.4805516701434031
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.12319871797464382
+            },
+            {
+              "indices": [
+                13
+              ],
+              "names": [
+                "B0:r3c1"
+              ],
+              "coefficient": 0.45134046721408194
+            },
+            {
+              "indices": [
+                5
+              ],
+              "names": [
+                "B0:r1c1"
+              ],
+              "coefficient": -0.3256142495848121
+            },
+            {
+              "indices": [
+                12
+              ],
+              "names": [
+                "B0:r3c0"
+              ],
+              "coefficient": -0.1146746748921215
+            },
+            {
+              "indices": [
+                28
+              ],
+              "names": [
+                "B1:r3c0"
+              ],
+              "coefficient": -0.13057989737317438
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": 0.1856655542070935
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.1885856071286068
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": 0.12635539643971924
+            },
+            {
+              "indices": [
+                15
+              ],
+              "names": [
+                "B0:r3c3"
+              ],
+              "coefficient": -0.07284910591226372
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.23994810651357157
+            },
+            {
+              "indices": [
+                41
+              ],
+              "names": [
+                "B2:r2c1"
+              ],
+              "coefficient": 0.15469815812336793
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.1566160515663709
+            },
+            {
+              "indices": [
+                14
+              ],
+              "names": [
+                "B0:r3c2"
+              ],
+              "coefficient": 0.18576916691086726
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": -0.20859955817032116
+            },
+            {
+              "indices": [
+                3
+              ],
+              "names": [
+                "B0:r0c3"
+              ],
+              "coefficient": -0.18372918305398367
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.07961867708906888
+            },
+            {
+              "indices": [
+                23
+              ],
+              "names": [
+                "B1:r1c3"
+              ],
+              "coefficient": -0.126259719665919
+            },
+            {
+              "indices": [
+                1
+              ],
+              "names": [
+                "B0:r0c1"
+              ],
+              "coefficient": -0.05438794335677402
+            },
+            {
+              "indices": [
+                45
+              ],
+              "names": [
+                "B2:r3c1"
+              ],
+              "coefficient": -0.12860250680013882
+            },
+            {
+              "indices": [
+                2
+              ],
+              "names": [
+                "B0:r0c2"
+              ],
+              "coefficient": -0.09476086195254095
+            },
+            {
+              "indices": [
+                34
+              ],
+              "names": [
+                "B2:r0c2"
+              ],
+              "coefficient": 0.1334641546694663
+            },
+            {
+              "indices": [
+                31
+              ],
+              "names": [
+                "B1:r3c3"
+              ],
+              "coefficient": -0.08592030079695037
+            },
+            {
+              "indices": [
+                30
+              ],
+              "names": [
+                "B1:r3c2"
+              ],
+              "coefficient": -0.07278849452766128
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.04613065737395271
+            },
+            {
+              "indices": [
+                54,
+                55
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.07756025781690692
+            },
+            {
+              "indices": [
+                17
+              ],
+              "names": [
+                "B1:r0c1"
+              ],
+              "coefficient": 0.08586829431766328
+            },
+            {
+              "indices": [
+                4
+              ],
+              "names": [
+                "B0:r1c0"
+              ],
+              "coefficient": 0.13961835659295158
+            },
+            {
+              "indices": [
+                19
+              ],
+              "names": [
+                "B1:r0c3"
+              ],
+              "coefficient": -0.06830462691198301
+            },
+            {
+              "indices": [
+                20
+              ],
+              "names": [
+                "B1:r1c0"
+              ],
+              "coefficient": 0.08945840889158908
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.07976022633860062
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.10997495358898748
+            },
+            {
+              "indices": [
+                38,
+                54
+              ],
+              "names": [
+                "B2:r1c2",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.09316208770986413
+            },
+            {
+              "indices": [
+                32
+              ],
+              "names": [
+                "B2:r0c0"
+              ],
+              "coefficient": 0.1169199415838539
+            },
+            {
+              "indices": [
+                11
+              ],
+              "names": [
+                "B0:r2c3"
+              ],
+              "coefficient": 0.13747433476180218
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.0984652568902931
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.06400884376945917
+            },
+            {
+              "indices": [
+                38
+              ],
+              "names": [
+                "B2:r1c2"
+              ],
+              "coefficient": 0.08713087328240501
+            },
+            {
+              "indices": [
+                58,
+                59
+              ],
+              "names": [
+                "B3:r2c2",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.08022501789734982
+            },
+            {
+              "indices": [
+                4,
+                20
+              ],
+              "names": [
+                "B0:r1c0",
+                "B1:r1c0"
+              ],
+              "coefficient": -0.013605252053642863
+            },
+            {
+              "indices": [
+                13,
+                14
+              ],
+              "names": [
+                "B0:r3c1",
+                "B0:r3c2"
+              ],
+              "coefficient": -0.19041949598290098
+            },
+            {
+              "indices": [
+                12,
+                28
+              ],
+              "names": [
+                "B0:r3c0",
+                "B1:r3c0"
+              ],
+              "coefficient": -0.21210749142875054
+            },
+            {
+              "indices": [
+                37
+              ],
+              "names": [
+                "B2:r1c1"
+              ],
+              "coefficient": 0.09725412314761134
+            },
+            {
+              "indices": [
+                37,
+                38
+              ],
+              "names": [
+                "B2:r1c1",
+                "B2:r1c2"
+              ],
+              "coefficient": -0.11595732041396298
+            },
+            {
+              "indices": [
+                9,
+                25
+              ],
+              "names": [
+                "B0:r2c1",
+                "B1:r2c1"
+              ],
+              "coefficient": 0.16505360433604405
+            },
+            {
+              "indices": [
+                53,
+                54
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.05887661017981239
+            },
+            {
+              "indices": [
+                11,
+                15
+              ],
+              "names": [
+                "B0:r2c3",
+                "B0:r3c3"
+              ],
+              "coefficient": -0.18596497561551828
+            },
+            {
+              "indices": [
+                11,
+                27
+              ],
+              "names": [
+                "B0:r2c3",
+                "B1:r2c3"
+              ],
+              "coefficient": 0.016059026364951382
+            },
+            {
+              "indices": [
+                22
+              ],
+              "names": [
+                "B1:r1c2"
+              ],
+              "coefficient": 0.08823329719601447
+            },
+            {
+              "indices": [
+                8,
+                9
+              ],
+              "names": [
+                "B0:r2c0",
+                "B0:r2c1"
+              ],
+              "coefficient": -0.1893661075518113
+            }
+          ]
+        },
+        "biased90_global": {
+          "intercept": 3.5127587423648294,
+          "terms": [
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.5303651223134882
+            },
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": 0.4350572897960077
+            },
+            {
+              "indices": [
+                12
+              ],
+              "names": [
+                "B0:r3c0"
+              ],
+              "coefficient": -0.34881142082435174
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": 0.41334971601702697
+            },
+            {
+              "indices": [
+                15
+              ],
+              "names": [
+                "B0:r3c3"
+              ],
+              "coefficient": -0.37769289232010933
+            },
+            {
+              "indices": [
+                28
+              ],
+              "names": [
+                "B1:r3c0"
+              ],
+              "coefficient": -0.40129127445124163
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.36615373025678555
+            },
+            {
+              "indices": [
+                5
+              ],
+              "names": [
+                "B0:r1c1"
+              ],
+              "coefficient": -0.36497245747256796
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.537768213079073
+            },
+            {
+              "indices": [
+                41
+              ],
+              "names": [
+                "B2:r2c1"
+              ],
+              "coefficient": 0.2686873517156961
+            },
+            {
+              "indices": [
+                13
+              ],
+              "names": [
+                "B0:r3c1"
+              ],
+              "coefficient": 0.32542233359301576
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": -0.04464334916336617
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.20489383053575344
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": -0.3377225394176764
+            },
+            {
+              "indices": [
+                14
+              ],
+              "names": [
+                "B0:r3c2"
+              ],
+              "coefficient": -0.15289848870628575
+            },
+            {
+              "indices": [
+                23
+              ],
+              "names": [
+                "B1:r1c3"
+              ],
+              "coefficient": -0.14068524779237734
+            },
+            {
+              "indices": [
+                31
+              ],
+              "names": [
+                "B1:r3c3"
+              ],
+              "coefficient": -0.20977639842388124
+            },
+            {
+              "indices": [
+                20
+              ],
+              "names": [
+                "B1:r1c0"
+              ],
+              "coefficient": 0.1729748169541578
+            },
+            {
+              "indices": [
+                30
+              ],
+              "names": [
+                "B1:r3c2"
+              ],
+              "coefficient": -0.16118725704951384
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.11185021338996196
+            },
+            {
+              "indices": [
+                1
+              ],
+              "names": [
+                "B0:r0c1"
+              ],
+              "coefficient": -0.24049912591914638
+            },
+            {
+              "indices": [
+                38
+              ],
+              "names": [
+                "B2:r1c2"
+              ],
+              "coefficient": 0.0873502766233367
+            },
+            {
+              "indices": [
+                17
+              ],
+              "names": [
+                "B1:r0c1"
+              ],
+              "coefficient": 0.15545870728146288
+            },
+            {
+              "indices": [
+                34
+              ],
+              "names": [
+                "B2:r0c2"
+              ],
+              "coefficient": 0.12262241646147277
+            },
+            {
+              "indices": [
+                19
+              ],
+              "names": [
+                "B1:r0c3"
+              ],
+              "coefficient": -0.11913121128830358
+            },
+            {
+              "indices": [
+                45
+              ],
+              "names": [
+                "B2:r3c1"
+              ],
+              "coefficient": -0.13434244441168808
+            },
+            {
+              "indices": [
+                10,
+                58
+              ],
+              "names": [
+                "B0:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.013113478492253253
+            },
+            {
+              "indices": [
+                9,
+                41
+              ],
+              "names": [
+                "B0:r2c1",
+                "B2:r2c1"
+              ],
+              "coefficient": 0.12446538596180447
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.14899721763789853
+            },
+            {
+              "indices": [
+                46
+              ],
+              "names": [
+                "B2:r3c2"
+              ],
+              "coefficient": -0.109639162565729
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.13476867168957019
+            },
+            {
+              "indices": [
+                2
+              ],
+              "names": [
+                "B0:r0c2"
+              ],
+              "coefficient": -0.16484607113443528
+            },
+            {
+              "indices": [
+                7,
+                55
+              ],
+              "names": [
+                "B0:r1c3",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.15617277311837954
+            },
+            {
+              "indices": [
+                53
+              ],
+              "names": [
+                "B3:r1c1"
+              ],
+              "coefficient": 0.17620533106296737
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.09454924805858565
+            },
+            {
+              "indices": [
+                8,
+                12
+              ],
+              "names": [
+                "B0:r2c0",
+                "B0:r3c0"
+              ],
+              "coefficient": -0.14348942566742387
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.18146854846841556
+            },
+            {
+              "indices": [
+                9,
+                39
+              ],
+              "names": [
+                "B0:r2c1",
+                "B2:r1c3"
+              ],
+              "coefficient": 0.06912214584356463
+            },
+            {
+              "indices": [
+                38,
+                54
+              ],
+              "names": [
+                "B2:r1c2",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.1090337442676003
+            },
+            {
+              "indices": [
+                15,
+                62
+              ],
+              "names": [
+                "B0:r3c3",
+                "B3:r3c2"
+              ],
+              "coefficient": 0.07999995078981259
+            },
+            {
+              "indices": [
+                31,
+                63
+              ],
+              "names": [
+                "B1:r3c3",
+                "B3:r3c3"
+              ],
+              "coefficient": 0.06547819217774148
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.2571640650744949
+            },
+            {
+              "indices": [
+                11,
+                15
+              ],
+              "names": [
+                "B0:r2c3",
+                "B0:r3c3"
+              ],
+              "coefficient": -0.0885166188176653
+            },
+            {
+              "indices": [
+                37,
+                38
+              ],
+              "names": [
+                "B2:r1c1",
+                "B2:r1c2"
+              ],
+              "coefficient": -0.12427494552547853
+            },
+            {
+              "indices": [
+                11
+              ],
+              "names": [
+                "B0:r2c3"
+              ],
+              "coefficient": -0.05668425641172091
+            },
+            {
+              "indices": [
+                53,
+                54
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.14884413484561762
+            },
+            {
+              "indices": [
+                8,
+                55
+              ],
+              "names": [
+                "B0:r2c0",
+                "B3:r1c3"
+              ],
+              "coefficient": -0.03677463761380216
+            },
+            {
+              "indices": [
+                8,
+                26
+              ],
+              "names": [
+                "B0:r2c0",
+                "B1:r2c2"
+              ],
+              "coefficient": -0.027199813482708866
+            },
+            {
+              "indices": [
+                4,
+                20
+              ],
+              "names": [
+                "B0:r1c0",
+                "B1:r1c0"
+              ],
+              "coefficient": -0.012651454425479536
+            },
+            {
+              "indices": [
+                29
+              ],
+              "names": [
+                "B1:r3c1"
+              ],
+              "coefficient": -0.06151159330567038
+            }
+          ]
+        },
+        "mixture_unary64": {
+          "intercept": 1.2951779140552402,
+          "terms": [
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": 0.459326878019277
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.20430587430415734
+            },
+            {
+              "indices": [
+                13
+              ],
+              "names": [
+                "B0:r3c1"
+              ],
+              "coefficient": 0.37595855586527244
+            },
+            {
+              "indices": [
+                5
+              ],
+              "names": [
+                "B0:r1c1"
+              ],
+              "coefficient": -0.3396857335961032
+            },
+            {
+              "indices": [
+                12
+              ],
+              "names": [
+                "B0:r3c0"
+              ],
+              "coefficient": -0.2038937878106777
+            },
+            {
+              "indices": [
+                28
+              ],
+              "names": [
+                "B1:r3c0"
+              ],
+              "coefficient": -0.21711909405596946
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": 0.24221056245478753
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.17795224618009584
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": 0.18715016900965256
+            },
+            {
+              "indices": [
+                15
+              ],
+              "names": [
+                "B0:r3c3"
+              ],
+              "coefficient": -0.14955347166707253
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.2611112228855219
+            },
+            {
+              "indices": [
+                41
+              ],
+              "names": [
+                "B2:r2c1"
+              ],
+              "coefficient": 0.1461910798365311
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.16293879626687452
+            },
+            {
+              "indices": [
+                14
+              ],
+              "names": [
+                "B0:r3c2"
+              ],
+              "coefficient": 0.11519626064241699
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": -0.21564798534219987
+            },
+            {
+              "indices": [
+                3
+              ],
+              "names": [
+                "B0:r0c3"
+              ],
+              "coefficient": -0.1881693808463637
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.09210517989450025
+            },
+            {
+              "indices": [
+                23
+              ],
+              "names": [
+                "B1:r1c3"
+              ],
+              "coefficient": -0.13026815654456228
+            },
+            {
+              "indices": [
+                1
+              ],
+              "names": [
+                "B0:r0c1"
+              ],
+              "coefficient": -0.0662004570167831
+            },
+            {
+              "indices": [
+                45
+              ],
+              "names": [
+                "B2:r3c1"
+              ],
+              "coefficient": -0.13691296659911276
+            },
+            {
+              "indices": [
+                2
+              ],
+              "names": [
+                "B0:r0c2"
+              ],
+              "coefficient": -0.10532468224918959
+            },
+            {
+              "indices": [
+                34
+              ],
+              "names": [
+                "B2:r0c2"
+              ],
+              "coefficient": 0.1277356141316213
+            },
+            {
+              "indices": [
+                31
+              ],
+              "names": [
+                "B1:r3c3"
+              ],
+              "coefficient": -0.08754194645021453
+            },
+            {
+              "indices": [
+                30
+              ],
+              "names": [
+                "B1:r3c2"
+              ],
+              "coefficient": -0.08975436453171329
+            },
+            {
+              "indices": [
+                17
+              ],
+              "names": [
+                "B1:r0c1"
+              ],
+              "coefficient": 0.08236149439955386
+            },
+            {
+              "indices": [
+                4
+              ],
+              "names": [
+                "B0:r1c0"
+              ],
+              "coefficient": 0.12547498267940865
+            },
+            {
+              "indices": [
+                19
+              ],
+              "names": [
+                "B1:r0c3"
+              ],
+              "coefficient": -0.08256663524610285
+            },
+            {
+              "indices": [
+                20
+              ],
+              "names": [
+                "B1:r1c0"
+              ],
+              "coefficient": 0.07738901301205459
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.0861451502563062
+            },
+            {
+              "indices": [
+                32
+              ],
+              "names": [
+                "B2:r0c0"
+              ],
+              "coefficient": 0.10066717290059367
+            },
+            {
+              "indices": [
+                11
+              ],
+              "names": [
+                "B0:r2c3"
+              ],
+              "coefficient": 0.06974836719529638
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.09056011747443496
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.06911400686784003
+            },
+            {
+              "indices": [
+                38
+              ],
+              "names": [
+                "B2:r1c2"
+              ],
+              "coefficient": 0.007750760039552753
+            },
+            {
+              "indices": [
+                37
+              ],
+              "names": [
+                "B2:r1c1"
+              ],
+              "coefficient": 0.04124037631107178
+            },
+            {
+              "indices": [
+                22
+              ],
+              "names": [
+                "B1:r1c2"
+              ],
+              "coefficient": 0.0778083207722581
+            },
+            {
+              "indices": [
+                46
+              ],
+              "names": [
+                "B2:r3c2"
+              ],
+              "coefficient": -0.0590889974268506
+            },
+            {
+              "indices": [
+                44
+              ],
+              "names": [
+                "B2:r3c0"
+              ],
+              "coefficient": -0.08063780243842206
+            },
+            {
+              "indices": [
+                29
+              ],
+              "names": [
+                "B1:r3c1"
+              ],
+              "coefficient": -0.05205225160710267
+            },
+            {
+              "indices": [
+                39
+              ],
+              "names": [
+                "B2:r1c3"
+              ],
+              "coefficient": 0.05021163627557695
+            },
+            {
+              "indices": [
+                36
+              ],
+              "names": [
+                "B2:r1c0"
+              ],
+              "coefficient": 0.06178225303799574
+            },
+            {
+              "indices": [
+                48
+              ],
+              "names": [
+                "B3:r0c0"
+              ],
+              "coefficient": 0.05320521084686069
+            },
+            {
+              "indices": [
+                51
+              ],
+              "names": [
+                "B3:r0c3"
+              ],
+              "coefficient": -0.002847756147478824
+            },
+            {
+              "indices": [
+                6
+              ],
+              "names": [
+                "B0:r1c2"
+              ],
+              "coefficient": 0.03304488697176404
+            },
+            {
+              "indices": [
+                62
+              ],
+              "names": [
+                "B3:r3c2"
+              ],
+              "coefficient": 0.03575348045368568
+            },
+            {
+              "indices": [
+                60
+              ],
+              "names": [
+                "B3:r3c0"
+              ],
+              "coefficient": 0.04548737096073652
+            },
+            {
+              "indices": [
+                58
+              ],
+              "names": [
+                "B3:r2c2"
+              ],
+              "coefficient": 0.05937842428383685
+            },
+            {
+              "indices": [
+                59
+              ],
+              "names": [
+                "B3:r2c3"
+              ],
+              "coefficient": 0.020684683788913822
+            },
+            {
+              "indices": [
+                21
+              ],
+              "names": [
+                "B1:r1c1"
+              ],
+              "coefficient": -0.019429584407493355
+            },
+            {
+              "indices": [
+                33
+              ],
+              "names": [
+                "B2:r0c1"
+              ],
+              "coefficient": 0.05139827707423325
+            },
+            {
+              "indices": [
+                53
+              ],
+              "names": [
+                "B3:r1c1"
+              ],
+              "coefficient": 0.019702761439600962
+            },
+            {
+              "indices": [
+                27
+              ],
+              "names": [
+                "B1:r2c3"
+              ],
+              "coefficient": -0.05089318898681796
+            },
+            {
+              "indices": [
+                61
+              ],
+              "names": [
+                "B3:r3c1"
+              ],
+              "coefficient": 0.03925684728018003
+            },
+            {
+              "indices": [
+                40
+              ],
+              "names": [
+                "B2:r2c0"
+              ],
+              "coefficient": -0.03479647107582949
+            },
+            {
+              "indices": [
+                26
+              ],
+              "names": [
+                "B1:r2c2"
+              ],
+              "coefficient": -0.02759512600410818
+            },
+            {
+              "indices": [
+                54
+              ],
+              "names": [
+                "B3:r1c2"
+              ],
+              "coefficient": 0.0306857582605233
+            },
+            {
+              "indices": [
+                43
+              ],
+              "names": [
+                "B2:r2c3"
+              ],
+              "coefficient": -0.003775141089478915
+            },
+            {
+              "indices": [
+                18
+              ],
+              "names": [
+                "B1:r0c2"
+              ],
+              "coefficient": 0.015963726571411124
+            },
+            {
+              "indices": [
+                16
+              ],
+              "names": [
+                "B1:r0c0"
+              ],
+              "coefficient": 0.016121090360080175
+            },
+            {
+              "indices": [
+                42
+              ],
+              "names": [
+                "B2:r2c2"
+              ],
+              "coefficient": 0.016605202566019876
+            },
+            {
+              "indices": [
+                56
+              ],
+              "names": [
+                "B3:r2c0"
+              ],
+              "coefficient": 0.03159479748913296
+            },
+            {
+              "indices": [
+                10
+              ],
+              "names": [
+                "B0:r2c2"
+              ],
+              "coefficient": 0.025859308840882972
+            },
+            {
+              "indices": [
+                35
+              ],
+              "names": [
+                "B2:r0c3"
+              ],
+              "coefficient": -0.005812995128366016
+            },
+            {
+              "indices": [
+                47
+              ],
+              "names": [
+                "B2:r3c3"
+              ],
+              "coefficient": 0.016695341880595616
+            }
+          ]
+        },
+        "mixture_constant": {
+          "intercept": 1.3257438503056764,
+          "terms": []
+        },
+        "v2_frozen_global50": {
+          "intercept": 1.0677339228111449,
+          "terms": [
+            {
+              "indices": [
+                13
+              ],
+              "names": [
+                "B0:r3c1"
+              ],
+              "coefficient": 0.40740119720324613
+            },
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": 0.3620123551735185
+            },
+            {
+              "indices": [
+                5
+              ],
+              "names": [
+                "B0:r1c1"
+              ],
+              "coefficient": -0.31974933338311207
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.2974764023236483
+            },
+            {
+              "indices": [
+                14
+              ],
+              "names": [
+                "B0:r3c2"
+              ],
+              "coefficient": 0.2965672585303543
+            },
+            {
+              "indices": [
+                4
+              ],
+              "names": [
+                "B0:r1c0"
+              ],
+              "coefficient": 0.27506241786275304
+            },
+            {
+              "indices": [
+                3
+              ],
+              "names": [
+                "B0:r0c3"
+              ],
+              "coefficient": -0.22328436439248714
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": -0.2009422791898545
+            },
+            {
+              "indices": [
+                58,
+                59
+              ],
+              "names": [
+                "B3:r2c2",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.1966801875471584
+            },
+            {
+              "indices": [
+                11
+              ],
+              "names": [
+                "B0:r2c3"
+              ],
+              "coefficient": 0.19724473262300057
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": 0.16171834687650383
+            },
+            {
+              "indices": [
+                45
+              ],
+              "names": [
+                "B2:r3c1"
+              ],
+              "coefficient": -0.1300226740222732
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.11632182423193244
+            },
+            {
+              "indices": [
+                37
+              ],
+              "names": [
+                "B2:r1c1"
+              ],
+              "coefficient": 0.13738088807980228
+            },
+            {
+              "indices": [
+                54,
+                55
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.12965565207538232
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.13208564562839123
+            },
+            {
+              "indices": [
+                23
+              ],
+              "names": [
+                "B1:r1c3"
+              ],
+              "coefficient": -0.1020060924705846
+            },
+            {
+              "indices": [
+                1,
+                2
+              ],
+              "names": [
+                "B0:r0c1",
+                "B0:r0c2"
+              ],
+              "coefficient": 0.14203927136267308
+            },
+            {
+              "indices": [
+                54,
+                58
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.09921381822047214
+            },
+            {
+              "indices": [
+                32
+              ],
+              "names": [
+                "B2:r0c0"
+              ],
+              "coefficient": 0.128392775010802
+            },
+            {
+              "indices": [
+                1,
+                5
+              ],
+              "names": [
+                "B0:r0c1",
+                "B0:r1c1"
+              ],
+              "coefficient": 0.12994511733979497
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": 0.09442266811721393
+            },
+            {
+              "indices": [
+                57,
+                58
+              ],
+              "names": [
+                "B3:r2c1",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.09818818396608509
+            },
+            {
+              "indices": [
+                9,
+                25
+              ],
+              "names": [
+                "B0:r2c1",
+                "B1:r2c1"
+              ],
+              "coefficient": 0.10299540215006747
+            },
+            {
+              "indices": [
+                27
+              ],
+              "names": [
+                "B1:r2c3"
+              ],
+              "coefficient": -0.06978934818233921
+            },
+            {
+              "indices": [
+                6
+              ],
+              "names": [
+                "B0:r1c2"
+              ],
+              "coefficient": 0.09976452378047347
+            },
+            {
+              "indices": [
+                50,
+                51
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r0c3"
+              ],
+              "coefficient": 0.09488899236050592
+            },
+            {
+              "indices": [
+                7,
+                55
+              ],
+              "names": [
+                "B0:r1c3",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.10553249094618235
+            },
+            {
+              "indices": [
+                13,
+                61
+              ],
+              "names": [
+                "B0:r3c1",
+                "B3:r3c1"
+              ],
+              "coefficient": -0.07631316983723403
+            },
+            {
+              "indices": [
+                1,
+                17
+              ],
+              "names": [
+                "B0:r0c1",
+                "B1:r0c1"
+              ],
+              "coefficient": -0.10293845934110395
+            },
+            {
+              "indices": [
+                28
+              ],
+              "names": [
+                "B1:r3c0"
+              ],
+              "coefficient": -0.0833228958994234
+            },
+            {
+              "indices": [
+                6,
+                58
+              ],
+              "names": [
+                "B0:r1c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.08257768832672222
+            },
+            {
+              "indices": [
+                15,
+                63
+              ],
+              "names": [
+                "B0:r3c3",
+                "B3:r3c3"
+              ],
+              "coefficient": -0.0512673636333578
+            },
+            {
+              "indices": [
+                15
+              ],
+              "names": [
+                "B0:r3c3"
+              ],
+              "coefficient": 0.06517799144318129
+            },
+            {
+              "indices": [
+                3,
+                51
+              ],
+              "names": [
+                "B0:r0c3",
+                "B3:r0c3"
+              ],
+              "coefficient": 0.07266934584708493
+            },
+            {
+              "indices": [
+                11,
+                27
+              ],
+              "names": [
+                "B0:r2c3",
+                "B1:r2c3"
+              ],
+              "coefficient": 0.06464567275331909
+            },
+            {
+              "indices": [
+                34
+              ],
+              "names": [
+                "B2:r0c2"
+              ],
+              "coefficient": 0.09017138852972927
+            },
+            {
+              "indices": [
+                51,
+                54
+              ],
+              "names": [
+                "B3:r0c3",
+                "B3:r1c2"
+              ],
+              "coefficient": -0.07680748978923109
+            },
+            {
+              "indices": [
+                13,
+                14
+              ],
+              "names": [
+                "B0:r3c1",
+                "B0:r3c2"
+              ],
+              "coefficient": -0.06872722549479049
+            },
+            {
+              "indices": [
+                58
+              ],
+              "names": [
+                "B3:r2c2"
+              ],
+              "coefficient": 0.0860665330129811
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.08568663147128334
+            },
+            {
+              "indices": [
+                50,
+                55
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c3"
+              ],
+              "coefficient": -0.058065900869466044
+            },
+            {
+              "indices": [
+                10,
+                42
+              ],
+              "names": [
+                "B0:r2c2",
+                "B2:r2c2"
+              ],
+              "coefficient": 0.06314650896499446
+            },
+            {
+              "indices": [
+                2,
+                50
+              ],
+              "names": [
+                "B0:r0c2",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.08040886299999406
+            },
+            {
+              "indices": [
+                1,
+                18
+              ],
+              "names": [
+                "B0:r0c1",
+                "B1:r0c2"
+              ],
+              "coefficient": 0.076478192005033
+            },
+            {
+              "indices": [
+                13,
+                25
+              ],
+              "names": [
+                "B0:r3c1",
+                "B1:r2c1"
+              ],
+              "coefficient": 0.05972458075641812
+            },
+            {
+              "indices": [
+                6,
+                38
+              ],
+              "names": [
+                "B0:r1c2",
+                "B2:r1c2"
+              ],
+              "coefficient": 0.05035998858812854
+            },
+            {
+              "indices": [
+                45,
+                61
+              ],
+              "names": [
+                "B2:r3c1",
+                "B3:r3c1"
+              ],
+              "coefficient": 0.04120972972803659
+            },
+            {
+              "indices": [
+                1,
+                50
+              ],
+              "names": [
+                "B0:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": -0.06065094035997775
+            },
+            {
+              "indices": [
+                7,
+                11
+              ],
+              "names": [
+                "B0:r1c3",
+                "B0:r2c3"
+              ],
+              "coefficient": 0.05728094090739611
+            }
+          ]
+        }
+      },
+      "selection": {
+        "mixture_global": {
+          "chosen_count": 50,
+          "criterion": 0.5292388736001035,
+          "validation_by_count": {
+            "0": {
+              "score": -0.05444829046072369,
+              "r2": {
+                "0.5": -0.04315841373718876,
+                "0.75": -0.0938911864239449,
+                "0.9": -0.00012495847884097522,
+                "0.95": -0.08061860320292014
+              }
+            },
+            "10": {
+              "score": 0.29045625252324925,
+              "r2": {
+                "0.5": 0.05751397008876524,
+                "0.75": 0.27566690354131507,
+                "0.9": 0.44559999053437016,
+                "0.95": 0.3830441459285464
+              }
+            },
+            "20": {
+              "score": 0.37795573642176605,
+              "r2": {
+                "0.5": 0.15419608465349033,
+                "0.75": 0.37617790204766,
+                "0.9": 0.5062568124126077,
+                "0.95": 0.4751921465733062
+              }
+            },
+            "35": {
+              "score": 0.4254341697458192,
+              "r2": {
+                "0.5": 0.22069040818174612,
+                "0.75": 0.42369142942632965,
+                "0.9": 0.5494909062535724,
+                "0.95": 0.5078639351216288
+              }
+            },
+            "50": {
+              "score": 0.5292388736001035,
+              "r2": {
+                "0.5": 0.31351601040007704,
+                "0.75": 0.49215911613037366,
+                "0.9": 0.6619791313991868,
+                "0.95": 0.6493012364707763
+              }
+            }
+          },
+          "criterion_type": "mean_per_stratum_r2"
+        },
+        "mixture_local": {
+          "chosen_count": 50,
+          "criterion": 0.5202632773502949,
+          "validation_by_count": {
+            "0": {
+              "score": -0.05444829046072369,
+              "r2": {
+                "0.5": -0.04315841373718876,
+                "0.75": -0.0938911864239449,
+                "0.9": -0.00012495847884097522,
+                "0.95": -0.08061860320292014
+              }
+            },
+            "10": {
+              "score": 0.29045625252324925,
+              "r2": {
+                "0.5": 0.05751397008876524,
+                "0.75": 0.27566690354131507,
+                "0.9": 0.44559999053437016,
+                "0.95": 0.3830441459285464
+              }
+            },
+            "20": {
+              "score": 0.37795573642176605,
+              "r2": {
+                "0.5": 0.15419608465349033,
+                "0.75": 0.37617790204766,
+                "0.9": 0.5062568124126077,
+                "0.95": 0.4751921465733062
+              }
+            },
+            "35": {
+              "score": 0.42603238393308607,
+              "r2": {
+                "0.5": 0.23171484480669835,
+                "0.75": 0.4260644455406637,
+                "0.9": 0.5440066617027064,
+                "0.95": 0.5023435836822759
+              }
+            },
+            "50": {
+              "score": 0.5202632773502949,
+              "r2": {
+                "0.5": 0.3014921156942565,
+                "0.75": 0.5036471864160955,
+                "0.9": 0.6459063397996099,
+                "0.95": 0.6300074674912177
+              }
+            }
+          },
+          "criterion_type": "mean_per_stratum_r2"
+        },
+        "biased90_global": {
+          "chosen_count": 50,
+          "criterion": 0.8212052189409023,
+          "validation_by_count": {
+            "0": {
+              "score": -0.00010164535743073522,
+              "r2": {
+                "0.9": -0.00010164535743073522
+              }
+            },
+            "10": {
+              "score": 0.5868955138797317,
+              "r2": {
+                "0.9": 0.5868955138797317
+              }
+            },
+            "20": {
+              "score": 0.7228496603501855,
+              "r2": {
+                "0.9": 0.7228496603501855
+              }
+            },
+            "35": {
+              "score": 0.7961252622221812,
+              "r2": {
+                "0.9": 0.7961252622221812
+              }
+            },
+            "50": {
+              "score": 0.8212052189409023,
+              "r2": {
+                "0.9": 0.8212052189409023
+              }
+            }
+          },
+          "criterion_type": "r2_at_p0.9"
+        }
+      },
+      "discovery": {
+        "candidate_count": 2080,
+        "top_scores": [
+          {
+            "indices": [
+              9
+            ],
+            "score": 0.3079818551084018
+          },
+          {
+            "indices": [
+              8
+            ],
+            "score": 0.2633999277178746
+          },
+          {
+            "indices": [
+              13
+            ],
+            "score": 0.20327664630652598
+          },
+          {
+            "indices": [
+              5
+            ],
+            "score": 0.20115321427582195
+          },
+          {
+            "indices": [
+              12
+            ],
+            "score": 0.17775733138416958
+          },
+          {
+            "indices": [
+              28
+            ],
+            "score": 0.1599340522624
+          },
+          {
+            "indices": [
+              50
+            ],
+            "score": 0.1526961919888238
+          },
+          {
+            "indices": [
+              49
+            ],
+            "score": 0.15102499434829936
+          },
+          {
+            "indices": [
+              25
+            ],
+            "score": 0.15025784069249154
+          },
+          {
+            "indices": [
+              15
+            ],
+            "score": 0.14448939161585758
+          },
+          {
+            "indices": [
+              55
+            ],
+            "score": 0.14309919480410177
+          },
+          {
+            "indices": [
+              41
+            ],
+            "score": 0.1392662795823516
+          },
+          {
+            "indices": [
+              63
+            ],
+            "score": 0.13238310383683682
+          },
+          {
+            "indices": [
+              14
+            ],
+            "score": 0.12651644291274922
+          },
+          {
+            "indices": [
+              7
+            ],
+            "score": 0.1246546671962872
+          },
+          {
+            "indices": [
+              3
+            ],
+            "score": 0.09317165830456954
+          },
+          {
+            "indices": [
+              52
+            ],
+            "score": 0.09054221080409489
+          },
+          {
+            "indices": [
+              23
+            ],
+            "score": 0.0890609134237754
+          },
+          {
+            "indices": [
+              1
+            ],
+            "score": 0.08174444097954435
+          },
+          {
+            "indices": [
+              45
+            ],
+            "score": 0.08090165173677674
+          },
+          {
+            "indices": [
+              2
+            ],
+            "score": 0.07265056310459903
+          },
+          {
+            "indices": [
+              34
+            ],
+            "score": 0.07117687314539296
+          },
+          {
+            "indices": [
+              31
+            ],
+            "score": 0.06974602351447116
+          },
+          {
+            "indices": [
+              30
+            ],
+            "score": 0.06945944990716925
+          },
+          {
+            "indices": [
+              49,
+              50
+            ],
+            "score": 0.06904171599202419
+          },
+          {
+            "indices": [
+              7,
+              55
+            ],
+            "score": 0.06697152403303076
+          },
+          {
+            "indices": [
+              54,
+              55
+            ],
+            "score": 0.06459194329136042
+          },
+          {
+            "indices": [
+              17
+            ],
+            "score": 0.06374579733125091
+          },
+          {
+            "indices": [
+              4
+            ],
+            "score": 0.06343452153197685
+          },
+          {
+            "indices": [
+              19
+            ],
+            "score": 0.0634336941565198
+          },
+          {
+            "indices": [
+              20
+            ],
+            "score": 0.060794621681579133
+          },
+          {
+            "indices": [
+              24
+            ],
+            "score": 0.05930607827974859
+          },
+          {
+            "indices": [
+              50,
+              54
+            ],
+            "score": 0.059256664677821265
+          },
+          {
+            "indices": [
+              38,
+              54
+            ],
+            "score": 0.058934146579858855
+          },
+          {
+            "indices": [
+              32
+            ],
+            "score": 0.057735600393287304
+          },
+          {
+            "indices": [
+              11
+            ],
+            "score": 0.057381920319637986
+          },
+          {
+            "indices": [
+              0
+            ],
+            "score": 0.0553550845606145
+          },
+          {
+            "indices": [
+              57
+            ],
+            "score": 0.053644424510117666
+          },
+          {
+            "indices": [
+              38
+            ],
+            "score": 0.05354922322506067
+          },
+          {
+            "indices": [
+              58,
+              59
+            ],
+            "score": 0.049469299946898186
+          },
+          {
+            "indices": [
+              4,
+              20
+            ],
+            "score": 0.04770845139361661
+          },
+          {
+            "indices": [
+              13,
+              14
+            ],
+            "score": 0.04720641171178756
+          },
+          {
+            "indices": [
+              12,
+              28
+            ],
+            "score": 0.047065183375617686
+          },
+          {
+            "indices": [
+              37
+            ],
+            "score": 0.046227113535559985
+          },
+          {
+            "indices": [
+              9,
+              41
+            ],
+            "score": 0.0437479286313853
+          },
+          {
+            "indices": [
+              6,
+              54
+            ],
+            "score": 0.04334662359609078
+          },
+          {
+            "indices": [
+              11,
+              59
+            ],
+            "score": 0.04296990848234939
+          },
+          {
+            "indices": [
+              37,
+              38
+            ],
+            "score": 0.04288678351025023
+          },
+          {
+            "indices": [
+              9,
+              25
+            ],
+            "score": 0.04265580614563329
+          },
+          {
+            "indices": [
+              8,
+              15
+            ],
+            "score": 0.04254155746956893
+          }
+        ],
+        "p_biased_per_stratum": true,
+        "mixture_orthogonality_claimed": false
+      },
+      "tests": {
+        "0.5": {
+          "mixture_global": {
+            "r2": 0.29509640721577257,
+            "mae": 0.9909915823876496,
+            "rmse": 1.250521340063096,
+            "sign_agreement": 0.79931640625,
+            "teacher_positive_fraction": 0.7763671875,
+            "teacher_variance": 2.2184645360885327
+          },
+          "mixture_local": {
+            "r2": 0.2688599016345169,
+            "mae": 1.0120130898306452,
+            "rmse": 1.2735809275959284,
+            "sign_agreement": 0.7841796875,
+            "teacher_positive_fraction": 0.7763671875,
+            "teacher_variance": 2.2184645360885327
+          },
+          "biased90_global": {
+            "r2": -3.37214776667322,
+            "mae": 2.590818111445332,
+            "rmse": 3.114394767350989,
+            "sign_agreement": 0.775390625,
+            "teacher_positive_fraction": 0.7763671875,
+            "teacher_variance": 2.2184645360885327
+          },
+          "mixture_unary64": {
+            "r2": 0.19237050812663603,
+            "mae": 1.0632349131172218,
+            "rmse": 1.3385430086554035,
+            "sign_agreement": 0.76611328125,
+            "teacher_positive_fraction": 0.7763671875,
+            "teacher_variance": 2.2184645360885327
+          },
+          "mixture_constant": {
+            "r2": -0.018171057521882306,
+            "mae": 1.1918711018942414,
+            "rmse": 1.502922613704396,
+            "sign_agreement": 0.7763671875,
+            "teacher_positive_fraction": 0.7763671875,
+            "teacher_variance": 2.2184645360885327
+          },
+          "v2_frozen_global50": {
+            "r2": 0.5701186977858509,
+            "mae": 0.770415204607535,
+            "rmse": 0.9765635789285031,
+            "sign_agreement": 0.8486328125,
+            "teacher_positive_fraction": 0.7763671875,
+            "teacher_variance": 2.2184645360885327
+          }
+        },
+        "0.75": {
+          "mixture_global": {
+            "r2": 0.4591004469301587,
+            "mae": 0.7907682666539047,
+            "rmse": 0.9890262234106989,
+            "sign_agreement": 0.90283203125,
+            "teacher_positive_fraction": 0.896484375,
+            "teacher_variance": 1.808418707396727
+          },
+          "mixture_local": {
+            "r2": 0.4802697095193098,
+            "mae": 0.7833256234671959,
+            "rmse": 0.9694792313948841,
+            "sign_agreement": 0.8974609375,
+            "teacher_positive_fraction": 0.896484375,
+            "teacher_variance": 1.808418707396727
+          },
+          "biased90_global": {
+            "r2": 0.1759984418465358,
+            "mae": 0.8814953086917248,
+            "rmse": 1.2207128379306809,
+            "sign_agreement": 0.9140625,
+            "teacher_positive_fraction": 0.896484375,
+            "teacher_variance": 1.808418707396727
+          },
+          "mixture_unary64": {
+            "r2": 0.43370828715179055,
+            "mae": 0.8253301362842043,
+            "rmse": 1.0119745685334376,
+            "sign_agreement": 0.90380859375,
+            "teacher_positive_fraction": 0.896484375,
+            "teacher_variance": 1.808418707396727
+          },
+          "mixture_constant": {
+            "r2": -0.1044850958614929,
+            "mae": 1.1505769187902624,
+            "rmse": 1.4132839450714747,
+            "sign_agreement": 0.896484375,
+            "teacher_positive_fraction": 0.896484375,
+            "teacher_variance": 1.808418707396727
+          },
+          "v2_frozen_global50": {
+            "r2": 0.07562248766415025,
+            "mae": 1.001094593052017,
+            "rmse": 1.2929275254263093,
+            "sign_agreement": 0.90625,
+            "teacher_positive_fraction": 0.896484375,
+            "teacher_variance": 1.808418707396727
+          }
+        },
+        "0.9": {
+          "mixture_global": {
+            "r2": 0.666027744052514,
+            "mae": 0.5185883770314285,
+            "rmse": 0.6588835191073646,
+            "sign_agreement": 0.908203125,
+            "teacher_positive_fraction": 0.880859375,
+            "teacher_variance": 1.2998908862045333
+          },
+          "mixture_local": {
+            "r2": 0.6455936129318847,
+            "mae": 0.5391403234477603,
+            "rmse": 0.6787412117755333,
+            "sign_agreement": 0.89892578125,
+            "teacher_positive_fraction": 0.880859375,
+            "teacher_variance": 1.2998908862045333
+          },
+          "biased90_global": {
+            "r2": 0.8390122114418159,
+            "mae": 0.34175041475488094,
+            "rmse": 0.4574566199510135,
+            "sign_agreement": 0.93994140625,
+            "teacher_positive_fraction": 0.880859375,
+            "teacher_variance": 1.2998908862045333
+          },
+          "mixture_unary64": {
+            "r2": 0.5784575581721518,
+            "mae": 0.5897965607043688,
+            "rmse": 0.740242648244766,
+            "sign_agreement": 0.900390625,
+            "teacher_positive_fraction": 0.880859375,
+            "teacher_variance": 1.2998908862045333
+          },
+          "mixture_constant": {
+            "r2": -1.7838821317450737e-05,
+            "mae": 0.903580068385083,
+            "rmse": 1.1401377437510718,
+            "sign_agreement": 0.880859375,
+            "teacher_positive_fraction": 0.880859375,
+            "teacher_variance": 1.2998908862045333
+          },
+          "v2_frozen_global50": {
+            "r2": -2.8696340820302146,
+            "mae": 1.9651063496228622,
+            "rmse": 2.2427889058441326,
+            "sign_agreement": 0.8818359375,
+            "teacher_positive_fraction": 0.880859375,
+            "teacher_variance": 1.2998908862045333
+          }
+        },
+        "0.95": {
+          "mixture_global": {
+            "r2": 0.6345647487687571,
+            "mae": 0.40297058459195456,
+            "rmse": 0.5008066464259971,
+            "sign_agreement": 0.9228515625,
+            "teacher_positive_fraction": 0.908203125,
+            "teacher_variance": 0.6863248585335462
+          },
+          "mixture_local": {
+            "r2": 0.6150113506526085,
+            "mae": 0.41347271292619225,
+            "rmse": 0.5140304274071423,
+            "sign_agreement": 0.91357421875,
+            "teacher_positive_fraction": 0.908203125,
+            "teacher_variance": 0.6863248585335462
+          },
+          "biased90_global": {
+            "r2": 0.8862628715536233,
+            "mae": 0.2043878073918251,
+            "rmse": 0.2793933044848628,
+            "sign_agreement": 0.955078125,
+            "teacher_positive_fraction": 0.908203125,
+            "teacher_variance": 0.6863248585335462
+          },
+          "mixture_unary64": {
+            "r2": 0.49222457306784484,
+            "mae": 0.48527815871496827,
+            "rmse": 0.5903379524103312,
+            "sign_agreement": 0.91552734375,
+            "teacher_positive_fraction": 0.908203125,
+            "teacher_variance": 0.6863248585335462
+          },
+          "mixture_constant": {
+            "r2": -0.07612324200636311,
+            "mae": 0.6726312264719309,
+            "rmse": 0.8594010308550242,
+            "sign_agreement": 0.908203125,
+            "teacher_positive_fraction": 0.908203125,
+            "teacher_variance": 0.6863248585335462
+          },
+          "v2_frozen_global50": {
+            "r2": -9.28503002806781,
+            "mae": 2.5155193387283896,
+            "rmse": 2.656853736852466,
+            "sign_agreement": 0.908203125,
+            "teacher_positive_fraction": 0.908203125,
+            "teacher_variance": 0.6863248585335462
+          }
+        }
+      },
+      "full_image": {
+        "teacher_margin": 0.877408504486084,
+        "models": {
+          "mixture_global": {
+            "prediction": 1.2632000976650828,
+            "abs_margin_error": 0.3857915931789988
+          },
+          "mixture_local": {
+            "prediction": 1.2509848948830986,
+            "abs_margin_error": 0.3735763903970146
+          },
+          "biased90_global": {
+            "prediction": 0.863643079690546,
+            "abs_margin_error": 0.013765424795537995
+          },
+          "mixture_unary64": {
+            "prediction": 1.3643606900287895,
+            "abs_margin_error": 0.4869521855427055
+          },
+          "mixture_constant": {
+            "prediction": 1.3257438503056764,
+            "abs_margin_error": 0.44833534581959245
+          },
+          "v2_frozen_global50": {
+            "prediction": 4.0530673297476065,
+            "abs_margin_error": 3.1756588252615225
+          }
+        }
+      },
+      "same_tile_B0_B3": [
+        {
+          "tile": 7,
+          "indices": [
+            7,
+            55
+          ],
+          "coefficient": 0.03848369912823685
+        },
+        {
+          "tile": 6,
+          "indices": [
+            6,
+            54
+          ],
+          "coefficient": -0.07754115067352495
+        },
+        {
+          "tile": 11,
+          "indices": [
+            11,
+            59
+          ],
+          "coefficient": -0.05075762514482221
+        }
+      ],
+      "gates": {
+        "G0_reconstruction": true,
+        "G0_correct_original": true,
+        "G1_p90_r2_nonnegative": true,
+        "G2_p95_r2_nonnegative": true,
+        "G3_p50_r2_ge_035": false,
+        "G4_p90_gain_ge_050_vs_frozen_v2": true
+      },
+      "oracle": {
+        "teacher_forward_examples": 54193,
+        "reconstruction_error": 5.960464477539063e-08,
+        "fraction_pixels_clipped": 0.0
+      },
+      "cache": {
+        "fresh": 54193,
+        "loaded": 0
+      }
+    },
+    "70_mean": {
+      "image_index": 70,
+      "class_id": 2,
+      "replacement": "mean",
+      "teacher_correct_intact": true,
+      "source": "first subsequent correctly predicted bird",
+      "graphs": {
+        "mixture_global": {
+          "intercept": -1.0103969401656334,
+          "terms": [
+            {
+              "indices": [
+                54
+              ],
+              "names": [
+                "B3:r1c2"
+              ],
+              "coefficient": -0.037680289846189076
+            },
+            {
+              "indices": [
+                58
+              ],
+              "names": [
+                "B3:r2c2"
+              ],
+              "coefficient": 0.21370874836532816
+            },
+            {
+              "indices": [
+                62
+              ],
+              "names": [
+                "B3:r3c2"
+              ],
+              "coefficient": -0.06716666154840471
+            },
+            {
+              "indices": [
+                53
+              ],
+              "names": [
+                "B3:r1c1"
+              ],
+              "coefficient": -0.12380874547955341
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.07457702357126143
+            },
+            {
+              "indices": [
+                54,
+                55
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.4210946473095819
+            },
+            {
+              "indices": [
+                49,
+                53
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r1c1"
+              ],
+              "coefficient": 0.32027673572675436
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.08277404406595056
+            },
+            {
+              "indices": [
+                62,
+                63
+              ],
+              "names": [
+                "B3:r3c2",
+                "B3:r3c3"
+              ],
+              "coefficient": -0.40230469815797265
+            },
+            {
+              "indices": [
+                56
+              ],
+              "names": [
+                "B3:r2c0"
+              ],
+              "coefficient": 0.012444048925380194
+            },
+            {
+              "indices": [
+                53,
+                57
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.3054024792994418
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": -0.10188072236673344
+            },
+            {
+              "indices": [
+                56,
+                57
+              ],
+              "names": [
+                "B3:r2c0",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.2995873159323193
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.23052563606564586
+            },
+            {
+              "indices": [
+                43
+              ],
+              "names": [
+                "B2:r2c3"
+              ],
+              "coefficient": 0.08533574133328646
+            },
+            {
+              "indices": [
+                27
+              ],
+              "names": [
+                "B1:r2c3"
+              ],
+              "coefficient": 0.09511551516298697
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.19395534784454588
+            },
+            {
+              "indices": [
+                53,
+                54
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.25917756155127125
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.24164464281202108
+            },
+            {
+              "indices": [
+                61,
+                62
+              ],
+              "names": [
+                "B3:r3c1",
+                "B3:r3c2"
+              ],
+              "coefficient": -0.23972409703673914
+            },
+            {
+              "indices": [
+                42,
+                58
+              ],
+              "names": [
+                "B2:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.16019621624404745
+            },
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": -0.15519184678950385
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": -0.18907017261039435
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": 0.08682481437255386
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": -0.14381604942680784
+            },
+            {
+              "indices": [
+                52,
+                56
+              ],
+              "names": [
+                "B3:r1c0",
+                "B3:r2c0"
+              ],
+              "coefficient": 0.17869470927632844
+            },
+            {
+              "indices": [
+                10,
+                58
+              ],
+              "names": [
+                "B0:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.18446410889763962
+            },
+            {
+              "indices": [
+                26,
+                43
+              ],
+              "names": [
+                "B1:r2c2",
+                "B2:r2c3"
+              ],
+              "coefficient": 0.11819843621083474
+            },
+            {
+              "indices": [
+                42
+              ],
+              "names": [
+                "B2:r2c2"
+              ],
+              "coefficient": -0.10768077354145587
+            },
+            {
+              "indices": [
+                48,
+                52
+              ],
+              "names": [
+                "B3:r0c0",
+                "B3:r1c0"
+              ],
+              "coefficient": 0.13949476110400813
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.12421335815753023
+            },
+            {
+              "indices": [
+                57,
+                58
+              ],
+              "names": [
+                "B3:r2c1",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.10961218380042757
+            },
+            {
+              "indices": [
+                52,
+                53
+              ],
+              "names": [
+                "B3:r1c0",
+                "B3:r1c1"
+              ],
+              "coefficient": 0.08426413843922836
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.07366944252217641
+            },
+            {
+              "indices": [
+                27,
+                42
+              ],
+              "names": [
+                "B1:r2c3",
+                "B2:r2c2"
+              ],
+              "coefficient": 0.09697718268781755
+            },
+            {
+              "indices": [
+                26,
+                58
+              ],
+              "names": [
+                "B1:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.10911861618346085
+            },
+            {
+              "indices": [
+                10,
+                59
+              ],
+              "names": [
+                "B0:r2c2",
+                "B3:r2c3"
+              ],
+              "coefficient": -0.12993141531668195
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.08196040370515102
+            },
+            {
+              "indices": [
+                26,
+                27
+              ],
+              "names": [
+                "B1:r2c2",
+                "B1:r2c3"
+              ],
+              "coefficient": 0.07829454615831884
+            },
+            {
+              "indices": [
+                10,
+                43
+              ],
+              "names": [
+                "B0:r2c2",
+                "B2:r2c3"
+              ],
+              "coefficient": 0.10704224619752971
+            },
+            {
+              "indices": [
+                48
+              ],
+              "names": [
+                "B3:r0c0"
+              ],
+              "coefficient": -0.08705452980020038
+            },
+            {
+              "indices": [
+                7,
+                54
+              ],
+              "names": [
+                "B0:r1c3",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.0656129850038502
+            },
+            {
+              "indices": [
+                61
+              ],
+              "names": [
+                "B3:r3c1"
+              ],
+              "coefficient": 0.007664358186844585
+            },
+            {
+              "indices": [
+                42,
+                43
+              ],
+              "names": [
+                "B2:r2c2",
+                "B2:r2c3"
+              ],
+              "coefficient": 0.10944192385214693
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.18987500029624582
+            },
+            {
+              "indices": [
+                43,
+                58
+              ],
+              "names": [
+                "B2:r2c3",
+                "B3:r2c2"
+              ],
+              "coefficient": -0.1232629809074016
+            },
+            {
+              "indices": [
+                55,
+                59
+              ],
+              "names": [
+                "B3:r1c3",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.09626168549211098
+            },
+            {
+              "indices": [
+                6,
+                22
+              ],
+              "names": [
+                "B0:r1c2",
+                "B1:r1c2"
+              ],
+              "coefficient": -0.024878972864210848
+            },
+            {
+              "indices": [
+                27,
+                59
+              ],
+              "names": [
+                "B1:r2c3",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.026448008097563935
+            },
+            {
+              "indices": [
+                10,
+                26
+              ],
+              "names": [
+                "B0:r2c2",
+                "B1:r2c2"
+              ],
+              "coefficient": -0.11510313183916043
+            }
+          ]
+        },
+        "mixture_local": {
+          "intercept": -1.010536664591997,
+          "terms": [
+            {
+              "indices": [
+                54
+              ],
+              "names": [
+                "B3:r1c2"
+              ],
+              "coefficient": -0.035037742118644744
+            },
+            {
+              "indices": [
+                58
+              ],
+              "names": [
+                "B3:r2c2"
+              ],
+              "coefficient": 0.26708145450554427
+            },
+            {
+              "indices": [
+                62
+              ],
+              "names": [
+                "B3:r3c2"
+              ],
+              "coefficient": -0.06890203334541993
+            },
+            {
+              "indices": [
+                53
+              ],
+              "names": [
+                "B3:r1c1"
+              ],
+              "coefficient": -0.11530843004971299
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.07391935987203524
+            },
+            {
+              "indices": [
+                54,
+                55
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.42069532332338355
+            },
+            {
+              "indices": [
+                49,
+                53
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r1c1"
+              ],
+              "coefficient": 0.31321526140267164
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.07712484839837139
+            },
+            {
+              "indices": [
+                62,
+                63
+              ],
+              "names": [
+                "B3:r3c2",
+                "B3:r3c3"
+              ],
+              "coefficient": -0.4014038068170266
+            },
+            {
+              "indices": [
+                56
+              ],
+              "names": [
+                "B3:r2c0"
+              ],
+              "coefficient": 0.026753046062298717
+            },
+            {
+              "indices": [
+                53,
+                57
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.3039995482678385
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": -0.09965960400750053
+            },
+            {
+              "indices": [
+                56,
+                57
+              ],
+              "names": [
+                "B3:r2c0",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.2940623134791257
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.22397881424302712
+            },
+            {
+              "indices": [
+                43
+              ],
+              "names": [
+                "B2:r2c3"
+              ],
+              "coefficient": 0.09465648560386623
+            },
+            {
+              "indices": [
+                27
+              ],
+              "names": [
+                "B1:r2c3"
+              ],
+              "coefficient": 0.13334476063789602
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.22109781129148234
+            },
+            {
+              "indices": [
+                53,
+                54
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.2551202109384822
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.2352404731005731
+            },
+            {
+              "indices": [
+                61,
+                62
+              ],
+              "names": [
+                "B3:r3c1",
+                "B3:r3c2"
+              ],
+              "coefficient": -0.23382851168681884
+            },
+            {
+              "indices": [
+                42,
+                58
+              ],
+              "names": [
+                "B2:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.2001600629888466
+            },
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": -0.15056659801655511
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": -0.17340192248609532
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": 0.11443519940350401
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": -0.1306787253070414
+            },
+            {
+              "indices": [
+                52,
+                56
+              ],
+              "names": [
+                "B3:r1c0",
+                "B3:r2c0"
+              ],
+              "coefficient": 0.17614429406759868
+            },
+            {
+              "indices": [
+                42
+              ],
+              "names": [
+                "B2:r2c2"
+              ],
+              "coefficient": -0.06389800244853293
+            },
+            {
+              "indices": [
+                48,
+                52
+              ],
+              "names": [
+                "B3:r0c0",
+                "B3:r1c0"
+              ],
+              "coefficient": 0.1483587162782323
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.11881040547852428
+            },
+            {
+              "indices": [
+                57,
+                58
+              ],
+              "names": [
+                "B3:r2c1",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.13499110669477402
+            },
+            {
+              "indices": [
+                52,
+                53
+              ],
+              "names": [
+                "B3:r1c0",
+                "B3:r1c1"
+              ],
+              "coefficient": 0.08407485538801457
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.06834680593818543
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.08714601773970182
+            },
+            {
+              "indices": [
+                26,
+                27
+              ],
+              "names": [
+                "B1:r2c2",
+                "B1:r2c3"
+              ],
+              "coefficient": 0.13096530986525493
+            },
+            {
+              "indices": [
+                48
+              ],
+              "names": [
+                "B3:r0c0"
+              ],
+              "coefficient": -0.08715342849546373
+            },
+            {
+              "indices": [
+                61
+              ],
+              "names": [
+                "B3:r3c1"
+              ],
+              "coefficient": 0.004288866423622933
+            },
+            {
+              "indices": [
+                42,
+                43
+              ],
+              "names": [
+                "B2:r2c2",
+                "B2:r2c3"
+              ],
+              "coefficient": 0.1279084139329903
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.18223237375792525
+            },
+            {
+              "indices": [
+                55,
+                59
+              ],
+              "names": [
+                "B3:r1c3",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.12321037447812064
+            },
+            {
+              "indices": [
+                6,
+                22
+              ],
+              "names": [
+                "B0:r1c2",
+                "B1:r1c2"
+              ],
+              "coefficient": -0.015225611003911154
+            },
+            {
+              "indices": [
+                10,
+                26
+              ],
+              "names": [
+                "B0:r2c2",
+                "B1:r2c2"
+              ],
+              "coefficient": -0.03895809362904004
+            },
+            {
+              "indices": [
+                33
+              ],
+              "names": [
+                "B2:r0c1"
+              ],
+              "coefficient": -0.11199549065864715
+            },
+            {
+              "indices": [
+                58,
+                59
+              ],
+              "names": [
+                "B3:r2c2",
+                "B3:r2c3"
+              ],
+              "coefficient": -0.12763552933403877
+            },
+            {
+              "indices": [
+                59
+              ],
+              "names": [
+                "B3:r2c3"
+              ],
+              "coefficient": -0.11519870850199904
+            },
+            {
+              "indices": [
+                54,
+                58
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.10020442350746335
+            },
+            {
+              "indices": [
+                26
+              ],
+              "names": [
+                "B1:r2c2"
+              ],
+              "coefficient": 0.02924698203151403
+            },
+            {
+              "indices": [
+                43,
+                59
+              ],
+              "names": [
+                "B2:r2c3",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.09133654475066107
+            },
+            {
+              "indices": [
+                33,
+                49
+              ],
+              "names": [
+                "B2:r0c1",
+                "B3:r0c1"
+              ],
+              "coefficient": 0.10121904616076283
+            },
+            {
+              "indices": [
+                60
+              ],
+              "names": [
+                "B3:r3c0"
+              ],
+              "coefficient": 0.04614618547299241
+            },
+            {
+              "indices": [
+                26,
+                42
+              ],
+              "names": [
+                "B1:r2c2",
+                "B2:r2c2"
+              ],
+              "coefficient": -0.05840512995076227
+            }
+          ]
+        },
+        "biased90_global": {
+          "intercept": -0.7593940397189581,
+          "terms": [
+            {
+              "indices": [
+                54
+              ],
+              "names": [
+                "B3:r1c2"
+              ],
+              "coefficient": -0.3060095505064719
+            },
+            {
+              "indices": [
+                53
+              ],
+              "names": [
+                "B3:r1c1"
+              ],
+              "coefficient": -0.295130159746841
+            },
+            {
+              "indices": [
+                62
+              ],
+              "names": [
+                "B3:r3c2"
+              ],
+              "coefficient": -0.05489093868495037
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": -0.19181787922546237
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.10012315869029252
+            },
+            {
+              "indices": [
+                58
+              ],
+              "names": [
+                "B3:r2c2"
+              ],
+              "coefficient": 0.15898194668178406
+            },
+            {
+              "indices": [
+                56
+              ],
+              "names": [
+                "B3:r2c0"
+              ],
+              "coefficient": 0.04601800025537696
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.022003103148549745
+            },
+            {
+              "indices": [
+                49,
+                53
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r1c1"
+              ],
+              "coefficient": 0.4822222603807656
+            },
+            {
+              "indices": [
+                62,
+                63
+              ],
+              "names": [
+                "B3:r3c2",
+                "B3:r3c3"
+              ],
+              "coefficient": -0.4905436004294861
+            },
+            {
+              "indices": [
+                27
+              ],
+              "names": [
+                "B1:r2c3"
+              ],
+              "coefficient": 0.05136098560934896
+            },
+            {
+              "indices": [
+                54,
+                55
+              ],
+              "names": [
+                "B3:r1c2",
+                "B3:r1c3"
+              ],
+              "coefficient": 0.46698985511392066
+            },
+            {
+              "indices": [
+                56,
+                57
+              ],
+              "names": [
+                "B3:r2c0",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.38831460096278125
+            },
+            {
+              "indices": [
+                53,
+                57
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.3642789753731021
+            },
+            {
+              "indices": [
+                43
+              ],
+              "names": [
+                "B2:r2c3"
+              ],
+              "coefficient": -0.06651028907150928
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.34368715238761943
+            },
+            {
+              "indices": [
+                49,
+                50
+              ],
+              "names": [
+                "B3:r0c1",
+                "B3:r0c2"
+              ],
+              "coefficient": 0.2452774329540132
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.2888727259715032
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": -0.17115544106187228
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": 0.03199031061637041
+            },
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": -0.19526889411564685
+            },
+            {
+              "indices": [
+                6,
+                22
+              ],
+              "names": [
+                "B0:r1c2",
+                "B1:r1c2"
+              ],
+              "coefficient": -0.010495161285677733
+            },
+            {
+              "indices": [
+                26,
+                43
+              ],
+              "names": [
+                "B1:r2c2",
+                "B2:r2c3"
+              ],
+              "coefficient": 0.25841722910836723
+            },
+            {
+              "indices": [
+                53,
+                54
+              ],
+              "names": [
+                "B3:r1c1",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.3155234974784317
+            },
+            {
+              "indices": [
+                42
+              ],
+              "names": [
+                "B2:r2c2"
+              ],
+              "coefficient": -0.19799934612116224
+            },
+            {
+              "indices": [
+                50,
+                54
+              ],
+              "names": [
+                "B3:r0c2",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.3602276435015158
+            },
+            {
+              "indices": [
+                42,
+                58
+              ],
+              "names": [
+                "B2:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.2847974501841405
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.10531304165026811
+            },
+            {
+              "indices": [
+                42,
+                43
+              ],
+              "names": [
+                "B2:r2c2",
+                "B2:r2c3"
+              ],
+              "coefficient": 0.16715262343280618
+            },
+            {
+              "indices": [
+                9,
+                62
+              ],
+              "names": [
+                "B0:r2c1",
+                "B3:r3c2"
+              ],
+              "coefficient": 0.025508261201388407
+            },
+            {
+              "indices": [
+                61
+              ],
+              "names": [
+                "B3:r3c1"
+              ],
+              "coefficient": 0.029372159123578784
+            },
+            {
+              "indices": [
+                26,
+                27
+              ],
+              "names": [
+                "B1:r2c2",
+                "B1:r2c3"
+              ],
+              "coefficient": 0.2067479059760873
+            },
+            {
+              "indices": [
+                27,
+                59
+              ],
+              "names": [
+                "B1:r2c3",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.05863296166842185
+            },
+            {
+              "indices": [
+                48,
+                52
+              ],
+              "names": [
+                "B3:r0c0",
+                "B3:r1c0"
+              ],
+              "coefficient": 0.10328350524121711
+            },
+            {
+              "indices": [
+                57,
+                60
+              ],
+              "names": [
+                "B3:r2c1",
+                "B3:r3c0"
+              ],
+              "coefficient": 0.14958615330628547
+            },
+            {
+              "indices": [
+                61,
+                62
+              ],
+              "names": [
+                "B3:r3c1",
+                "B3:r3c2"
+              ],
+              "coefficient": -0.2781175432530233
+            },
+            {
+              "indices": [
+                43,
+                59
+              ],
+              "names": [
+                "B2:r2c3",
+                "B3:r2c3"
+              ],
+              "coefficient": 0.0016106447935009597
+            },
+            {
+              "indices": [
+                52,
+                53
+              ],
+              "names": [
+                "B3:r1c0",
+                "B3:r1c1"
+              ],
+              "coefficient": 0.032801731757508695
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": -0.39124386160782587
+            },
+            {
+              "indices": [
+                26
+              ],
+              "names": [
+                "B1:r2c2"
+              ],
+              "coefficient": -0.32617548194615725
+            },
+            {
+              "indices": [
+                40,
+                57
+              ],
+              "names": [
+                "B2:r2c0",
+                "B3:r2c1"
+              ],
+              "coefficient": 0.03035864935808596
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.10962392797763107
+            },
+            {
+              "indices": [
+                8,
+                61
+              ],
+              "names": [
+                "B0:r2c0",
+                "B3:r3c1"
+              ],
+              "coefficient": 0.0956280950614011
+            },
+            {
+              "indices": [
+                35
+              ],
+              "names": [
+                "B2:r0c3"
+              ],
+              "coefficient": 0.06371175456093263
+            },
+            {
+              "indices": [
+                26,
+                58
+              ],
+              "names": [
+                "B1:r2c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.12875334567109495
+            },
+            {
+              "indices": [
+                9,
+                63
+              ],
+              "names": [
+                "B0:r2c1",
+                "B3:r3c3"
+              ],
+              "coefficient": -0.0012155416096922666
+            },
+            {
+              "indices": [
+                52,
+                56
+              ],
+              "names": [
+                "B3:r1c0",
+                "B3:r2c0"
+              ],
+              "coefficient": 0.1080493033187692
+            },
+            {
+              "indices": [
+                6,
+                58
+              ],
+              "names": [
+                "B0:r1c2",
+                "B3:r2c2"
+              ],
+              "coefficient": 0.0030733367346053846
+            },
+            {
+              "indices": [
+                7,
+                54
+              ],
+              "names": [
+                "B0:r1c3",
+                "B3:r1c2"
+              ],
+              "coefficient": 0.179403488973076
+            },
+            {
+              "indices": [
+                10,
+                59
+              ],
+              "names": [
+                "B0:r2c2",
+                "B3:r2c3"
+              ],
+              "coefficient": -0.08789174073836825
+            }
+          ]
+        },
+        "mixture_unary64": {
+          "intercept": -1.163784791907725,
+          "terms": [
+            {
+              "indices": [
+                54
+              ],
+              "names": [
+                "B3:r1c2"
+              ],
+              "coefficient": 0.31886350312937667
+            },
+            {
+              "indices": [
+                58
+              ],
+              "names": [
+                "B3:r2c2"
+              ],
+              "coefficient": 0.389350207054951
+            },
+            {
+              "indices": [
+                62
+              ],
+              "names": [
+                "B3:r3c2"
+              ],
+              "coefficient": -0.28293540641657267
+            },
+            {
+              "indices": [
+                53
+              ],
+              "names": [
+                "B3:r1c1"
+              ],
+              "coefficient": 0.23851421730457012
+            },
+            {
+              "indices": [
+                57
+              ],
+              "names": [
+                "B3:r2c1"
+              ],
+              "coefficient": 0.1992381649240623
+            },
+            {
+              "indices": [
+                63
+              ],
+              "names": [
+                "B3:r3c3"
+              ],
+              "coefficient": -0.23951041374478477
+            },
+            {
+              "indices": [
+                56
+              ],
+              "names": [
+                "B3:r2c0"
+              ],
+              "coefficient": 0.19567122410632726
+            },
+            {
+              "indices": [
+                55
+              ],
+              "names": [
+                "B3:r1c3"
+              ],
+              "coefficient": 0.10492927237563653
+            },
+            {
+              "indices": [
+                8
+              ],
+              "names": [
+                "B0:r2c0"
+              ],
+              "coefficient": -0.21191354222794054
+            },
+            {
+              "indices": [
+                43
+              ],
+              "names": [
+                "B2:r2c3"
+              ],
+              "coefficient": 0.16954569861704064
+            },
+            {
+              "indices": [
+                27
+              ],
+              "names": [
+                "B1:r2c3"
+              ],
+              "coefficient": 0.18522299296477512
+            },
+            {
+              "indices": [
+                49
+              ],
+              "names": [
+                "B3:r0c1"
+              ],
+              "coefficient": -0.04528015026994726
+            },
+            {
+              "indices": [
+                9
+              ],
+              "names": [
+                "B0:r2c1"
+              ],
+              "coefficient": -0.17012209271257897
+            },
+            {
+              "indices": [
+                50
+              ],
+              "names": [
+                "B3:r0c2"
+              ],
+              "coefficient": -0.05209085037578686
+            },
+            {
+              "indices": [
+                7
+              ],
+              "names": [
+                "B0:r1c3"
+              ],
+              "coefficient": 0.12967343918342725
+            },
+            {
+              "indices": [
+                25
+              ],
+              "names": [
+                "B1:r2c1"
+              ],
+              "coefficient": -0.1420074947504148
+            },
+            {
+              "indices": [
+                42
+              ],
+              "names": [
+                "B2:r2c2"
+              ],
+              "coefficient": 0.02943038282732313
+            },
+            {
+              "indices": [
+                24
+              ],
+              "names": [
+                "B1:r2c0"
+              ],
+              "coefficient": -0.11112775210331954
+            },
+            {
+              "indices": [
+                0
+              ],
+              "names": [
+                "B0:r0c0"
+              ],
+              "coefficient": 0.09921009539555975
+            },
+            {
+              "indices": [
+                48
+              ],
+              "names": [
+                "B3:r0c0"
+              ],
+              "coefficient": -0.029567376545509064
+            },
+            {
+              "indices": [
+                61
+              ],
+              "names": [
+                "B3:r3c1"
+              ],
+              "coefficient": -0.069676864749374
+            },
+            {
+              "indices": [
+                52
+              ],
+              "names": [
+                "B3:r1c0"
+              ],
+              "coefficient": -0.043274818442258035
+            },
+            {
+              "indices": [
+                33
+              ],
+              "names": [
+                "B2:r0c1"
+              ],
+              "coefficient": -0.05961047869698974
+            },
+            {
+              "indices": [
+                59
+              ],
+              "names": [
+                "B3:r2c3"
+              ],
+              "coefficient": -0.09592522801704297
+            },
+            {
+              "indices": [
+                26
+              ],
+              "names": [
+                "B1:r2c2"
+              ],
+              "coefficient": 0.04199292928922963
+            },
+            {
+              "indices": [
+                60
+              ],
+              "names": [
+                "B3:r3c0"
+              ],
+              "coefficient": 0.04664263307498036
+            },
+            {
+              "indices": [
+                10
+              ],
+              "names": [
+                "B0:r2c2"
+              ],
+              "coefficient": 0.06125908759509648
+            },
+            {
+              "indices": [
+                35
+              ],
+              "names": [
+                "B2:r0c3"
+              ],
+              "coefficient": 0.03467591185525645
+            },
+            {
+              "indices": [
+                11
+              ],
+              "names": [
+                "B0:r2c3"
+              ],
+              "coefficient": 0.06619868688112678
+            },
+            {
+              "indices": [
+                2
+              ],
+              "names": [
+                "B0:r0c2"
+              ],
+              "coefficient": 0.0902577152607822
+            },
+            {
+              "indices": [
+                45
+              ],
+              "names": [
+                "B2:r3c1"
+              ],
+              "coefficient": -0.010513327060423804
+            },
+            {
+              "indices": [
+                1
+              ],
+              "names": [
+                "B0:r0c1"
+              ],
+              "coefficient": 0.065783641622294
+            },
+            {
+              "indices": [
+                3
+              ],
+              "names": [
+                "B0:r0c3"
+              ],
+              "coefficient": 0.029151946054174985
+            },
+            {
+              "indices": [
+                29
+              ],
+              "names": [
+                "B1:r3c1"
+              ],
+              "coefficient": -0.01854622793708301
+            },
+            {
+              "indices": [
+                39
+              ],
+              "names": [
+                "B2:r1c3"
+              ],
+              "coefficient": 0.027865522858232714
+            },
+            {
+              "indices": [
+                16
+              ],
+              "names": [
+                "B1:r0c0"
+              ],
+              "coefficient": 0.029876909673978724
+            },
+            {
+              "indices": [
+                6
+              ],
+              "names": [
+                "B0:r1c2"
+              ],
+              "coefficient": 0.04978998635185303
+            },
+            {
+              "indices": [
+                13
+              ],
+              "names": [
+                "B0:r3c1"
+              ],
+              "coefficient": 0.031363940421149074
+            },
+            {
+              "indices": [
+                19
+              ],
+              "names": [
+                "B1:r0c3"
+              ],
+              "coefficient": 0.03036189995987442
+            },
+            {
+              "indices": [
+                14
+              ],
+              "names": [
+                "B0:r3c2"
+              ],
+              "coefficient": -0.005749990006084361
+            },
+            {
+              "indices": [
+                41
+              ],
+              "names": [
+                "B2:r2c1"
+              ],
+              "coefficient": -0.010848353531458277
+            },
+            {
+              "indices": [
+                4
+              ],
+              "names": [
+                "B0:r1c0"
+              ],
+              "coefficient": -0.011743440014025164
+            },
+            {
+              "indices": [
+                34
+              ],
+              "names": [
+                "B2:r0c2"
+              ],
+              "coefficient": -0.011415378400173645
+            },
+            {
+              "indices": [
+                47
+              ],
+              "names": [
+                "B2:r3c3"
+              ],
+              "coefficient": -0.03629242177897743
+            },
+            {
+              "indices": [
+                44
+              ],
+              "names": [
+                "B2:r3c0"
+              ],
+              "coefficient": 0.00754422022801622
+            },
+            {
+              "indices": [
+                32
+              ],
+              "names": [
+                "B2:r0c0"
+              ],
+              "coefficient": -0.03226182390035215
+            },
+            {
+              "indices": [
+                31
+              ],
+              "names": [
+                "B1:r3c3"
+              ],
+              "coefficient": -0.015833605610655044
+            },
+            {
+              "indices": [
+                36
+              ],
+              "names": [
+                "B2:r1c0"
+              ],
+              "coefficient": 0.015528979249137298
+            },
+            {
+              "indices": [
+                17
+              ],
+              "names": [
+                "B1:r0c1"
+              ],
+              "coefficient": -0.02737172108912343
+            },
+            {
+              "indices": [
+                22
+              ],
+              "names": [
+                "B1:r1c2"
+              ],
+              "coefficient": -0.027034812588441766
+            },
+            {
+              "indices": [
+                23
+              ],
+              "names": [
+                "B1:r1c3"
+              ],
+              "coefficient": -0.019811465749190387
+            },
+            {
+              "indices": [
+                30
+              ],
+              "names": [
+                "B1:r3c2"
+              ],
+              "coefficient": -0.02943378265544955
+            },
+            {
+              "indices": [
+                51
+              ],
+              "names": [
+                "B3:r0c3"
+              ],
+              "coefficient": -0.033642720984718655
+            },
+            {
+              "indices": [
+                18
+              ],
+              "names": [
+                "B1:r0c2"
+              ],
+              "coefficient": 0.016893867083964023
+            },
+            {
+              "indices": [
+                37
+              ],
+              "names": [
+                "B2:r1c1"
+              ],
+              "coefficient": -0.012549175801299894
+            },
+            {
+              "indices": [
+                15
+              ],
+              "names": [
+                "B0:r3c3"
+              ],
+              "coefficient": 0.009170395135208238
+            },
+            {
+              "indices": [
+                40
+              ],
+              "names": [
+                "B2:r2c0"
+              ],
+              "coefficient": 0.0022676757964468883
+            },
+            {
+              "indices": [
+                5
+              ],
+              "names": [
+                "B0:r1c1"
+              ],
+              "coefficient": 0.010196709776927389
+            },
+            {
+              "indices": [
+                38
+              ],
+              "names": [
+                "B2:r1c2"
+              ],
+              "coefficient": 0.019163824914565555
+            },
+            {
+              "indices": [
+                46
+              ],
+              "names": [
+                "B2:r3c2"
+              ],
+              "coefficient": -0.001174843292977287
+            },
+            {
+              "indices": [
+                12
+              ],
+              "names": [
+                "B0:r3c0"
+              ],
+              "coefficient": 0.002467181409100511
+            },
+            {
+              "indices": [
+                28
+              ],
+              "names": [
+                "B1:r3c0"
+              ],
+              "coefficient": 0.017392356666461713
+            },
+            {
+              "indices": [
+                21
+              ],
+              "names": [
+                "B1:r1c1"
+              ],
+              "coefficient": -0.00951530324110805
+            },
+            {
+              "indices": [
+                20
+              ],
+              "names": [
+                "B1:r1c0"
+              ],
+              "coefficient": -0.0002800017789964427
+            }
+          ]
+        },
+        "mixture_constant": {
+          "intercept": -0.6680273756124079,
+          "terms": []
+        }
+      },
+      "selection": {
+        "mixture_global": {
+          "chosen_count": 50,
+          "criterion": 0.7461920546950129,
+          "validation_by_count": {
+            "0": {
+              "score": -0.12183279298894184,
+              "r2": {
+                "0.5": -0.062481026363426784,
+                "0.75": -0.05935716880063113,
+                "0.9": -0.021246655025955574,
+                "0.95": -0.34424632176575387
+              }
+            },
+            "10": {
+              "score": 0.3858086361231297,
+              "r2": {
+                "0.5": 0.028867092796318605,
+                "0.75": 0.3797058535673774,
+                "0.9": 0.5692952966174423,
+                "0.95": 0.5653663015113806
+              }
+            },
+            "20": {
+              "score": 0.6036138075489297,
+              "r2": {
+                "0.5": 0.341099836485137,
+                "0.75": 0.5697502837708106,
+                "0.9": 0.7452487275551951,
+                "0.95": 0.7583563823845759
+              }
+            },
+            "35": {
+              "score": 0.7045752082246859,
+              "r2": {
+                "0.5": 0.461417299450963,
+                "0.75": 0.6821174967411361,
+                "0.9": 0.8234227261689567,
+                "0.95": 0.8513433105376877
+              }
+            },
+            "50": {
+              "score": 0.7461920546950129,
+              "r2": {
+                "0.5": 0.5082461865294747,
+                "0.75": 0.7449820238820579,
+                "0.9": 0.8544651411520321,
+                "0.95": 0.8770748672164871
+              }
+            }
+          },
+          "criterion_type": "mean_per_stratum_r2"
+        },
+        "mixture_local": {
+          "chosen_count": 50,
+          "criterion": 0.7270358258278028,
+          "validation_by_count": {
+            "0": {
+              "score": -0.12183279298894184,
+              "r2": {
+                "0.5": -0.062481026363426784,
+                "0.75": -0.05935716880063113,
+                "0.9": -0.021246655025955574,
+                "0.95": -0.34424632176575387
+              }
+            },
+            "10": {
+              "score": 0.3858086361231297,
+              "r2": {
+                "0.5": 0.028867092796318605,
+                "0.75": 0.3797058535673774,
+                "0.9": 0.5692952966174423,
+                "0.95": 0.5653663015113806
+              }
+            },
+            "20": {
+              "score": 0.6036138075489297,
+              "r2": {
+                "0.5": 0.341099836485137,
+                "0.75": 0.5697502837708106,
+                "0.9": 0.7452487275551951,
+                "0.95": 0.7583563823845759
+              }
+            },
+            "35": {
+              "score": 0.6919356600133172,
+              "r2": {
+                "0.5": 0.4427286704947164,
+                "0.75": 0.6656183576452096,
+                "0.9": 0.8173488902062231,
+                "0.95": 0.8420467217071196
+              }
+            },
+            "50": {
+              "score": 0.7270358258278028,
+              "r2": {
+                "0.5": 0.4960969089815914,
+                "0.75": 0.7042295934165379,
+                "0.9": 0.8449258174720262,
+                "0.95": 0.8628909834410555
+              }
+            }
+          },
+          "criterion_type": "mean_per_stratum_r2"
+        },
+        "biased90_global": {
+          "chosen_count": 50,
+          "criterion": 0.8759149893237461,
+          "validation_by_count": {
+            "0": {
+              "score": -0.0008168604345790698,
+              "r2": {
+                "0.9": -0.0008168604345790698
+              }
+            },
+            "10": {
+              "score": 0.6618692971929421,
+              "r2": {
+                "0.9": 0.6618692971929421
+              }
+            },
+            "20": {
+              "score": 0.7697360612700836,
+              "r2": {
+                "0.9": 0.7697360612700836
+              }
+            },
+            "35": {
+              "score": 0.8492798235035711,
+              "r2": {
+                "0.9": 0.8492798235035711
+              }
+            },
+            "50": {
+              "score": 0.8759149893237461,
+              "r2": {
+                "0.9": 0.8759149893237461
+              }
+            }
+          },
+          "criterion_type": "r2_at_p0.9"
+        }
+      },
+      "discovery": {
+        "candidate_count": 2080,
+        "top_scores": [
+          {
+            "indices": [
+              54
+            ],
+            "score": 0.2667358063479123
+          },
+          {
+            "indices": [
+              58
+            ],
+            "score": 0.22073598316764445
+          },
+          {
+            "indices": [
+              62
+            ],
+            "score": 0.21507859597569867
+          },
+          {
+            "indices": [
+              53
+            ],
+            "score": 0.21131919097763519
+          },
+          {
+            "indices": [
+              57
+            ],
+            "score": 0.19246747855957846
+          },
+          {
+            "indices": [
+              54,
+              55
+            ],
+            "score": 0.18125513409745136
+          },
+          {
+            "indices": [
+              49,
+              53
+            ],
+            "score": 0.17034762641012785
+          },
+          {
+            "indices": [
+              63
+            ],
+            "score": 0.16652505859849778
+          },
+          {
+            "indices": [
+              62,
+              63
+            ],
+            "score": 0.16511593054971577
+          },
+          {
+            "indices": [
+              56
+            ],
+            "score": 0.1622131442717286
+          },
+          {
+            "indices": [
+              53,
+              57
+            ],
+            "score": 0.14915883858745602
+          },
+          {
+            "indices": [
+              55
+            ],
+            "score": 0.14447378991547663
+          },
+          {
+            "indices": [
+              56,
+              57
+            ],
+            "score": 0.1382878929806423
+          },
+          {
+            "indices": [
+              8
+            ],
+            "score": 0.126707617045301
+          },
+          {
+            "indices": [
+              43
+            ],
+            "score": 0.11795079826783403
+          },
+          {
+            "indices": [
+              27
+            ],
+            "score": 0.11772351184220359
+          },
+          {
+            "indices": [
+              49
+            ],
+            "score": 0.11671126201402213
+          },
+          {
+            "indices": [
+              53,
+              54
+            ],
+            "score": 0.11630056471713617
+          },
+          {
+            "indices": [
+              50,
+              54
+            ],
+            "score": 0.11530122402313883
+          },
+          {
+            "indices": [
+              61,
+              62
+            ],
+            "score": 0.09476220062564869
+          },
+          {
+            "indices": [
+              42,
+              58
+            ],
+            "score": 0.0931048158074816
+          },
+          {
+            "indices": [
+              9
+            ],
+            "score": 0.0829031348371911
+          },
+          {
+            "indices": [
+              50
+            ],
+            "score": 0.07973676982176586
+          },
+          {
+            "indices": [
+              7
+            ],
+            "score": 0.07725393895347807
+          },
+          {
+            "indices": [
+              25
+            ],
+            "score": 0.07590071166096944
+          },
+          {
+            "indices": [
+              52,
+              56
+            ],
+            "score": 0.0756951541932905
+          },
+          {
+            "indices": [
+              10,
+              58
+            ],
+            "score": 0.075117902360667
+          },
+          {
+            "indices": [
+              26,
+              43
+            ],
+            "score": 0.0696282695373937
+          },
+          {
+            "indices": [
+              42
+            ],
+            "score": 0.0694254764313533
+          },
+          {
+            "indices": [
+              48,
+              52
+            ],
+            "score": 0.06805704892532999
+          },
+          {
+            "indices": [
+              24
+            ],
+            "score": 0.06374628124802456
+          },
+          {
+            "indices": [
+              57,
+              58
+            ],
+            "score": 0.06343124965903234
+          },
+          {
+            "indices": [
+              52,
+              53
+            ],
+            "score": 0.06099694510976386
+          },
+          {
+            "indices": [
+              49,
+              50
+            ],
+            "score": 0.06043221066427468
+          },
+          {
+            "indices": [
+              27,
+              42
+            ],
+            "score": 0.06010888172332527
+          },
+          {
+            "indices": [
+              26,
+              58
+            ],
+            "score": 0.05735553510612659
+          },
+          {
+            "indices": [
+              10,
+              59
+            ],
+            "score": 0.05701893300803404
+          },
+          {
+            "indices": [
+              0
+            ],
+            "score": 0.05692037726341023
+          },
+          {
+            "indices": [
+              26,
+              27
+            ],
+            "score": 0.05690125490978018
+          },
+          {
+            "indices": [
+              10,
+              43
+            ],
+            "score": 0.05545488275067168
+          },
+          {
+            "indices": [
+              48
+            ],
+            "score": 0.054699033790968854
+          },
+          {
+            "indices": [
+              7,
+              54
+            ],
+            "score": 0.05372766105007949
+          },
+          {
+            "indices": [
+              61
+            ],
+            "score": 0.0536462206919299
+          },
+          {
+            "indices": [
+              42,
+              43
+            ],
+            "score": 0.05201143693311362
+          },
+          {
+            "indices": [
+              52
+            ],
+            "score": 0.05131851031859712
+          },
+          {
+            "indices": [
+              43,
+              58
+            ],
+            "score": 0.049189285542763896
+          },
+          {
+            "indices": [
+              55,
+              59
+            ],
+            "score": 0.04841874882507461
+          },
+          {
+            "indices": [
+              6,
+              22
+            ],
+            "score": 0.04740976924275301
+          },
+          {
+            "indices": [
+              27,
+              59
+            ],
+            "score": 0.047009259468705065
+          },
+          {
+            "indices": [
+              10,
+              26
+            ],
+            "score": 0.04695823757900675
+          }
+        ],
+        "p_biased_per_stratum": true,
+        "mixture_orthogonality_claimed": false
+      },
+      "tests": {
+        "0.5": {
+          "mixture_global": {
+            "r2": 0.5080069884985219,
+            "mae": 0.7895879931135151,
+            "rmse": 1.0010138679200078,
+            "sign_agreement": 0.80908203125,
+            "teacher_positive_fraction": 0.25634765625,
+            "teacher_variance": 2.0366727582372666
+          },
+          "mixture_local": {
+            "r2": 0.4967419962128695,
+            "mae": 0.802312700276003,
+            "rmse": 1.0124089424131515,
+            "sign_agreement": 0.80712890625,
+            "teacher_positive_fraction": 0.25634765625,
+            "teacher_variance": 2.0366727582372666
+          },
+          "biased90_global": {
+            "r2": 0.10761568905352459,
+            "mae": 1.063405830137436,
+            "rmse": 1.3481449536244314,
+            "sign_agreement": 0.7568359375,
+            "teacher_positive_fraction": 0.25634765625,
+            "teacher_variance": 2.0366727582372666
+          },
+          "mixture_unary64": {
+            "r2": -0.11106972515491731,
+            "mae": 1.1975463039243763,
+            "rmse": 1.5042890153574835,
+            "sign_agreement": 0.72412109375,
+            "teacher_positive_fraction": 0.25634765625,
+            "teacher_variance": 2.0366727582372666
+          },
+          "mixture_constant": {
+            "r2": -0.04034770853856573,
+            "mae": 1.1561976526496145,
+            "rmse": 1.4556262697117899,
+            "sign_agreement": 0.74365234375,
+            "teacher_positive_fraction": 0.25634765625,
+            "teacher_variance": 2.0366727582372666
+          }
+        },
+        "0.75": {
+          "mixture_global": {
+            "r2": 0.7156404572525376,
+            "mae": 0.6007948614034414,
+            "rmse": 0.7564990416285251,
+            "sign_agreement": 0.86279296875,
+            "teacher_positive_fraction": 0.24365234375,
+            "teacher_variance": 2.012560557860807
+          },
+          "mixture_local": {
+            "r2": 0.6934873237151977,
+            "mae": 0.6232658926730609,
+            "rmse": 0.7854141091011485,
+            "sign_agreement": 0.85791015625,
+            "teacher_positive_fraction": 0.24365234375,
+            "teacher_variance": 2.012560557860807
+          },
+          "biased90_global": {
+            "r2": 0.6200212530535396,
+            "mae": 0.6745579513973075,
+            "rmse": 0.8744885584899431,
+            "sign_agreement": 0.84130859375,
+            "teacher_positive_fraction": 0.24365234375,
+            "teacher_variance": 2.012560557860807
+          },
+          "mixture_unary64": {
+            "r2": 0.31755917683585777,
+            "mae": 0.9328473612739028,
+            "rmse": 1.171944317693556,
+            "sign_agreement": 0.79296875,
+            "teacher_positive_fraction": 0.24365234375,
+            "teacher_variance": 2.012560557860807
+          },
+          "mixture_constant": {
+            "r2": -0.06022180509789532,
+            "mae": 1.1690240352518595,
+            "rmse": 1.4607397398318471,
+            "sign_agreement": 0.75634765625,
+            "teacher_positive_fraction": 0.24365234375,
+            "teacher_variance": 2.012560557860807
+          }
+        },
+        "0.9": {
+          "mixture_global": {
+            "r2": 0.8514926096266219,
+            "mae": 0.3715350675123731,
+            "rmse": 0.47711563255850925,
+            "sign_agreement": 0.88330078125,
+            "teacher_positive_fraction": 0.38525390625,
+            "teacher_variance": 1.5328484748090605
+          },
+          "mixture_local": {
+            "r2": 0.8341181885544307,
+            "mae": 0.38927593366834845,
+            "rmse": 0.504253588656447,
+            "sign_agreement": 0.88525390625,
+            "teacher_positive_fraction": 0.38525390625,
+            "teacher_variance": 1.5328484748090605
+          },
+          "biased90_global": {
+            "r2": 0.8639608895728901,
+            "mae": 0.3399978562256623,
+            "rmse": 0.4566479419997169,
+            "sign_agreement": 0.90185546875,
+            "teacher_positive_fraction": 0.38525390625,
+            "teacher_variance": 1.5328484748090605
+          },
+          "mixture_unary64": {
+            "r2": 0.4930915002054519,
+            "mae": 0.7122709732747188,
+            "rmse": 0.881483931094505,
+            "sign_agreement": 0.7578125,
+            "teacher_positive_fraction": 0.38525390625,
+            "teacher_variance": 1.5328484748090605
+          },
+          "mixture_constant": {
+            "r2": -0.022413379845490633,
+            "mae": 1.0130807060667792,
+            "rmse": 1.2518805014539274,
+            "sign_agreement": 0.61474609375,
+            "teacher_positive_fraction": 0.38525390625,
+            "teacher_variance": 1.5328484748090605
+          }
+        },
+        "0.95": {
+          "mixture_global": {
+            "r2": 0.8817706519634793,
+            "mae": 0.2696467956091384,
+            "rmse": 0.34727562138162427,
+            "sign_agreement": 0.91162109375,
+            "teacher_positive_fraction": 0.5341796875,
+            "teacher_variance": 1.0200543199201277
+          },
+          "mixture_local": {
+            "r2": 0.875503705958733,
+            "mae": 0.276944903066856,
+            "rmse": 0.35636074776950527,
+            "sign_agreement": 0.9111328125,
+            "teacher_positive_fraction": 0.5341796875,
+            "teacher_variance": 1.0200543199201277
+          },
+          "biased90_global": {
+            "r2": 0.9176205194843086,
+            "mae": 0.21183965391187776,
+            "rmse": 0.2898819500638269,
+            "sign_agreement": 0.9228515625,
+            "teacher_positive_fraction": 0.5341796875,
+            "teacher_variance": 1.0200543199201277
+          },
+          "mixture_unary64": {
+            "r2": 0.4256278680065416,
+            "mae": 0.6459798269223445,
+            "rmse": 0.7654350230304732,
+            "sign_agreement": 0.5869140625,
+            "teacher_positive_fraction": 0.5341796875,
+            "teacher_variance": 1.0200543199201277
+          },
+          "mixture_constant": {
+            "r2": -0.27675094105590725,
+            "mae": 0.9666080026631861,
+            "rmse": 1.1412078307154077,
+            "sign_agreement": 0.4658203125,
+            "teacher_positive_fraction": 0.5341796875,
+            "teacher_variance": 1.0200543199201277
+          }
+        }
+      },
+      "full_image": {
+        "teacher_margin": 0.4190495014190674,
+        "models": {
+          "mixture_global": {
+            "prediction": 0.21315576515218793,
+            "abs_margin_error": 0.20589373626687946
+          },
+          "mixture_local": {
+            "prediction": 0.17739443695334656,
+            "abs_margin_error": 0.24165506446572083
+          },
+          "biased90_global": {
+            "prediction": 0.2992238190473451,
+            "abs_margin_error": 0.11982568237172231
+          },
+          "mixture_unary64": {
+            "prediction": -0.2653504373398764,
+            "abs_margin_error": 0.6843999387589438
+          },
+          "mixture_constant": {
+            "prediction": -0.6680273756124079,
+            "abs_margin_error": 1.0870768770314752
+          }
+        }
+      },
+      "same_tile_B0_B3": [
+        {
+          "tile": 10,
+          "indices": [
+            10,
+            58
+          ],
+          "coefficient": 0.18446410889763962
+        }
+      ],
+      "gates": {
+        "G0_reconstruction": true,
+        "G0_correct_original": true,
+        "G1_p90_r2_nonnegative": true,
+        "G2_p95_r2_nonnegative": true,
+        "G3_p50_r2_ge_035": true,
+        "G4_p90_gain_ge_050_vs_frozen_v2": null
+      },
+      "oracle": {
+        "teacher_forward_examples": 54193,
+        "reconstruction_error": 1.4901161193847656e-08,
+        "fraction_pixels_clipped": 0.0
+      },
+      "cache": {
+        "fresh": 54193,
+        "loaded": 0
+      }
+    }
+  },
+  "config": {
+    "mode": "cifar",
+    "device": "cuda",
+    "data": "data",
+    "download": false,
+    "checkpoint": "runs/checkpoints/cifar_tiny_cnn.pt",
+    "v2_results": "runs/v2_bird_seed41/results.json",
+    "out": "runs/v3_birds_mixture_seed41",
+    "class_id": 2,
+    "seed": 41,
+    "replacement": "mean",
+    "readout": "margin",
+    "fixed_competitor": 3,
+    "discovery_per_p": 6000,
+    "fit_per_p": 4000,
+    "validation_per_p": 1500,
+    "test_per_p": 2048,
+    "max_terms": 50,
+    "ridge": 0.0001,
+    "batch": 256
+  },
+  "index_second_bird": 70,
+  "cross_bird_by_replacement": [
+    {
+      "tiles_a": [
+        6,
+        7,
+        11
+      ],
+      "tiles_b": [
+        10
+      ],
+      "shared_tiles": [],
+      "same_sign_shared": [],
+      "count_shared": 0,
+      "count_same_sign": 0,
+      "replacement": "mean"
+    }
+  ],
+  "cross_bird": {
+    "tiles_a": [
+      6,
+      7,
+      11
+    ],
+    "tiles_b": [
+      10
+    ],
+    "shared_tiles": [],
+    "same_sign_shared": [],
+    "count_shared": 0,
+    "count_same_sign": 0,
+    "replacement": "mean"
+  }
+}

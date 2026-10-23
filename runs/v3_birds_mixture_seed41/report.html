@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width"><title>SihtiGraphModel v3</title>
+<style>body{font:15px system-ui;max-width:1040px;margin:2rem auto;padding:0 1rem;line-height:1.5}table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #7775;padding:7px;text-align:left}section{border-top:1px solid #999;margin:2rem 0;padding-top:1rem}</style>
+<h1>SihtiGraphModel v3 — retention-aware graph reader</h1>
+<p>Frozen CNN; separate discovery/fit/validation/test masks within p=.5/.75/.9/.95. Per-p biased Walsh moments rank terms; the mixture fit is NOT itself an orthogonal Fourier spectrum. Frozen v2 is evaluated on new paired masks.</p>
+<section><h2>Bird #65 · mean</h2>
+<table><tr><th>Retention p</th><th>Mixture global R²</th><th>Mixture local R²</th><th>Fixed-p=.90 R²</th><th>Unaries R²</th><th>Frozen v2 R²</th></tr>
+<tr><td>0.5</td><td>0.2951</td><td>0.2689</td><td>-3.3721</td><td>0.1924</td><td>0.5701</td></tr>
+<tr><td>0.75</td><td>0.4591</td><td>0.4803</td><td>0.1760</td><td>0.4337</td><td>0.0756</td></tr>
+<tr><td>0.9</td><td>0.6660</td><td>0.6456</td><td>0.8390</td><td>0.5785</td><td>-2.8696</td></tr>
+<tr><td>0.95</td><td>0.6346</td><td>0.6150</td><td>0.8863</td><td>0.4922</td><td>-9.2850</td></tr>
+</table>
+<p>Unmasked teacher margin 0.8774; mixture_global error=0.386; mixture_local error=0.374; biased90_global error=0.014; mixture_unary64 error=0.487; mixture_constant error=0.448; v2_frozen_global50 error=3.176</p>
+<p>B0↔B3 same-tile links: tile 7: +0.038, tile 6: -0.078, tile 11: -0.051</p>
+<p>Selected 50 terms; clipped pixels 0.00%</p></section>
+<section><h2>Bird #70 · mean</h2>
+<table><tr><th>Retention p</th><th>Mixture global R²</th><th>Mixture local R²</th><th>Fixed-p=.90 R²</th><th>Unaries R²</th><th>Frozen v2 R²</th></tr>
+<tr><td>0.5</td><td>0.5080</td><td>0.4967</td><td>0.1076</td><td>-0.1111</td><td>n/a</td></tr>
+<tr><td>0.75</td><td>0.7156</td><td>0.6935</td><td>0.6200</td><td>0.3176</td><td>n/a</td></tr>
+<tr><td>0.9</td><td>0.8515</td><td>0.8341</td><td>0.8640</td><td>0.4931</td><td>n/a</td></tr>
+<tr><td>0.95</td><td>0.8818</td><td>0.8755</td><td>0.9176</td><td>0.4256</td><td>n/a</td></tr>
+</table>
+<p>Unmasked teacher margin 0.4190; mixture_global error=0.206; mixture_local error=0.242; biased90_global error=0.120; mixture_unary64 error=0.684; mixture_constant error=1.087</p>
+<p>B0↔B3 same-tile links: tile 10: +0.184</p>
+<p>Selected 50 terms; clipped pixels 0.00%</p></section>
+<h2>Cross-bird structural recurrence</h2><p>Shared same-tile B0↔B3 links: []; same sign: []. Independently fitted graphs, not transferred coefficients.</p>
+<p>Read results.json for complete gates, coefficients and controls. v1/v2 historical results are unchanged.</p></html>

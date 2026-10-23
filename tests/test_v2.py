@@ -7,7 +7,7 @@ import numpy as np
 
 from sihtigraph.v2 import (choose_graph, degree12_moments, degree3_moments,
                            fit_graph, graph_predict, local_allowed, ranked_candidates,
-                           synthetic_40)
+                           summary, synthetic_40)
 from sihtigraph.walsh import random_masks, r2
 from run_v2 import StageCache, STAGES, stage_masks
 
@@ -96,6 +96,33 @@ class V2ReaderTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 third=StageCache(root,identity)
                 third.read('selection',123,seed,oracle)
+
+    def test_offline_report_renders_complete_v2_receipt(self):
+        from run_v2 import html_report, write_json, pretty
+        rng=np.random.default_rng(33)
+        z=random_masks(rng,180,64)
+        y=z[:,3].astype(float)
+        graph=fit_graph(z,y,[{'indices':[3],'score':1.}])
+        record={k:{'intercept':graph['intercept'],
+                   'terms':[pretty(t) for t in graph['terms']]}
+                for k in ('global50','local50','unary64','random50','constant')}
+        scores={k:summary(z,y,graph) for k in record}
+        data={'protocol':'v2_direct_1','complete':True,'image_index':65,
+              'class_name':'bird','readout':'margin',
+              'checkpoint':{'validation_accuracy':.7746},
+              'distillation':{'mean':{'graphs':record,
+                   'selection':{'global50':{'count':1},'local50':{'count':1}},
+                   'tests':{p:scores for p in ('p=0.5','p=0.75','p=0.9')},
+                   'cache':{'fresh':180,'loaded':0},
+                   'teacher_oracle':{'fraction_pixels_clipped':0.0}}}}
+        with tempfile.TemporaryDirectory() as dirname:
+            out=Path(dirname)
+            write_json(out/'results.json',data)
+            html_report(data,out)
+            self.assertIn('64 unaries', (out/'report.html').read_text(encoding='utf8'))
+            self.assertIn('B0:r0c3', (out/'report.html').read_text(encoding='utf8'))
+            decoded=json.loads((out/'results.json').read_text(encoding='utf8'))
+            self.assertTrue(decoded['complete'])
 
     def test_v1_results_path_refused_by_runner(self):
         # The v2 script has no trainer and defaults to a new directory.

@@ -36,6 +36,39 @@ python run.py --mode smoke
 
 This checks exact known one-, two- and three-way Fourier recovery in a synthetic oracle, and exact multiscale image reassembly when torch is available.
 
+## Recover after the NumPy `int64` JSON crash (October 2026)
+
+If training completed but `run.py --mode all` failed with
+`TypeError: Object of type int64 is not JSON serializable`, **do not train again**.
+The completed teacher checkpoint remains at
+`runs/checkpoints/cifar_tiny_cnn.pt` (the best validation epoch was already
+saved before distillation began). The crash occurred *after* the zero-replacement
+KM search had reached result serialization, so that search must be run again.
+
+From the existing cloned repository:
+
+~~~powershell
+git pull
+python3.13 -m unittest discover -s tests -v
+python3.13 run.py --mode distill --device cuda
+~~~
+
+`--mode distill` loads the saved teacher checkpoint and the already-downloaded
+CIFAR-10 data. It does **not** retrain the CNN or download the dataset again.
+The failed run called `json.dumps` **before** writing `results.json`, so
+the default output directory should still be reusable.
+
+If `runs/v1_bird_seed41/results.json` already exists from a separate
+completed run, keep it intact and choose a fresh folder instead:
+`python3.13 run.py --mode distill --device cuda --out runs/v1_bird_seed41_resume`.
+Do **not** add `--overwrite` merely to work around the crash; retaining the
+original trained checkpoint and the unmodified sample budgets matters for
+comparability.
+
+This is a serialization repair, not a new distillation result. Report the
+held-out graph metrics and both zero/mean replacement outcomes after rerunning
+the inference phase.
+
 ## What the pieces really mean
 
 An image `I` has four Laplacian-like octave components `R0..R3` with `sum(R)=I` to floating tolerance. Each component is partitioned into 16 **non-overlapping 8×8 tiles**, including all three RGB channels. If all 64 switches are on, the original 32×32 image is reconstructed **exactly**. With all switches off the replacement image is either black or a constant RGB CIFAR mean. Partial images are summed then clamped to valid RGB before entering the frozen classifier; clipping frequency is reported.

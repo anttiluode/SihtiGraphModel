@@ -4,6 +4,29 @@
 
 **No CIFAR model training or full GPU distillation is claimed as completed.** The CPU synthetic spectral smoke and the local unit tests were run before this first code push. See [PREREG.md](PREREG.md) for the untouched numerical gates.
 
+## v3 — explaining the nearly intact bird, not just damaged images
+
+v1's search failed. v2 repaired the extractor: on half-kept CIFAR bird #65, an unguided 50-branch graph reached R² .559 (zero fill) / .534 (mean fill). It found **five same-tile B0×B3 links** in each condition, but the mean-fill v2 graph collapsed to R² −3.035 when 90% of its image pieces were present.
+
+**v3 is a separate, preregistered experiment:** discover input interactions in p-biased Walsh bases at retention 50%, 75%, 90%, and 95%, then jointly fit a single graph from a *mixture* of all four conditions. An actual mixture is not itself an orthogonal Walsh basis—v3 uses within-stratum p-biased coefficients only for feature ranking. It also fits a fixed-p=.90 control using only that stratum, evaluates the **frozen v2** graph on the same fresh masks, and repeats the extraction on the first later correctly classified CIFAR bird. Those are two independent local explanations, not cross-image parameter transfer.
+
+**The thresholds differ by experiment:** v1's G1 required R²≥.80, v2's new G1 required R²≥.50 at 50% retention, and v3 asks primarily for R²≥0 at 90% and 95% retention with no catastrophic loss at 50%. These gates cannot be retroactively applied to earlier runs. See [PREREG_V3.md](PREREG_V3.md).
+
+No v3 CIFAR outcomes are claimed before running them on your saved CNN.
+
+~~~powershell
+git pull
+python3.13 -m unittest discover -s tests -v
+python3.13 run_v3.py --mode synthetic
+python3.13 run_v3.py --mode cifar --device cuda
+~~~
+
+It **does not retrain or redownload** the CNN/CIFAR dataset. Results are written to runs/v3_birds_mixture_seed41/results.json and report.html; masks and teacher responses are cached for restart. The old v1/v2 run directories remain untouched. By default v3 uses the cleaner *mean replacement*, retaining the original moving-class logit margin readout. Optional zero fill or raw logit requires a different output directory.
+
+The report includes separate held-out R² at 50%, 75%, 90%, 95%, **absolute logit-margin error on the one fully intact image**, and which same-tile finest/coarsest band connections return on the second bird. p=1 has only one image and thus no meaningful R².
+
+---
+
 ## v2 repair — direct graph reading (new, separate protocol)
 
 **The completed v1 run failed**, and those results remain unchanged in [runs/v1_bird_seed41](runs/v1_bird_seed41). A pure-additive 40-term diagnostic showed that its noisy recursive KM search can discard a function that fits in the 50-branch budget. v2 fixes the **reader**, without changing the original image, CNN checkpoint or v1 measurements.

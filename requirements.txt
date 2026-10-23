@@ -1,0 +1,4 @@
+numpy>=1.24
+# Install torch and torchvision matched for your CUDA version (see README)
+torch>=2.1
+torchvision>=0.16

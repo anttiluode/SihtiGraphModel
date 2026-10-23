@@ -102,8 +102,14 @@ def load_teacher(checkpoint: str, device: str) -> tuple[TinyCNN,dict]:
 class ImageOracle:
     """Only accepts binary piece masks; counts all teacher forward examples."""
     def __init__(self, model: TinyCNN, image: torch.Tensor, label: int,
-                 replacement: str, device: str, batch: int = 256):
+                 replacement: str, device: str, batch: int = 256,
+                 readout: str = 'margin', fixed_competitor: int = 3):
         self.model=model;self.device=device;self.label=label;self.batch=batch
+        if readout not in ('margin', 'raw', 'fixed'):
+            raise ValueError("readout must be margin, raw or fixed")
+        if not 0 <= fixed_competitor < 10 or fixed_competitor == label:
+            raise ValueError("fixed competitor must be another CIFAR class")
+        self.readout=readout;self.fixed_competitor=fixed_competitor
         self.base,self.parts=pieces(image.to(device),replacement)
         self.calls=0; self.clipped_pixels=0;self.total_pixels=0
         err=float(torch.max(torch.abs(self.base+self.parts.sum(0,keepdim=True)-image.to(device))))
@@ -122,8 +128,14 @@ class ImageOracle:
                 x=x.clamp(0,1)
                 logits=self.model(normalize(x))
                 target=logits[:,self.label]
-                neg=logits.clone();neg[:,self.label]=-1e9
-                output.append((target-neg.max(1).values).cpu().numpy())
+                if self.readout == 'raw':
+                    score=target
+                elif self.readout == 'fixed':
+                    score=target-logits[:,self.fixed_competitor]
+                else:
+                    neg=logits.clone();neg[:,self.label]=-1e9
+                    score=target-neg.max(1).values
+                output.append(score.cpu().numpy())
         self.calls+=len(z)
         return np.concatenate(output) if output else np.zeros(0)
     def summary(self)->dict:

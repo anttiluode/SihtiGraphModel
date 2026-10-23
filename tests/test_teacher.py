@@ -22,4 +22,25 @@ class TeacherTests(unittest.TestCase):
         self.assertEqual(oracle.calls,3)
         self.assertLess(oracle.reconstruction_error,1e-5)
 
+    def test_readout_raw_fixed_and_moving_margin(self):
+        torch.manual_seed(41)
+        model=TinyCNN().eval()
+        img=torch.rand(1,3,32,32)
+        z=torch.ones((1,64),dtype=torch.int8).numpy()
+        with torch.inference_mode():
+            logits=model(normalize(img))[0]
+            bird=float(logits[2])
+            fixed=float(logits[2]-logits[3])
+            others=logits.clone(); others[2]=-1e9
+            moving=float(logits[2]-others.max())
+        raw=ImageOracle(model,img,2,'mean','cpu',batch=4,readout='raw')
+        fixed_oracle=ImageOracle(model,img,2,'mean','cpu',batch=4,readout='fixed',fixed_competitor=3)
+        moving_oracle=ImageOracle(model,img,2,'mean','cpu',batch=4)
+        self.assertAlmostEqual(float(raw(z)[0]),bird,places=5)
+        self.assertAlmostEqual(float(fixed_oracle(z)[0]),fixed,places=5)
+        self.assertAlmostEqual(float(moving_oracle(z)[0]),moving,places=5)
+        with self.assertRaises(ValueError):
+            ImageOracle(model,img,2,'mean','cpu',readout='fixed',fixed_competitor=2)
+
+
 if __name__=='__main__':unittest.main()

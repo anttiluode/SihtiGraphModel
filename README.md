@@ -4,6 +4,37 @@
 
 **No CIFAR model training or full GPU distillation is claimed as completed.** The CPU synthetic spectral smoke and the local unit tests were run before this first code push. See [PREREG.md](PREREG.md) for the untouched numerical gates.
 
+## v2 repair — direct graph reading (new, separate protocol)
+
+**The completed v1 run failed**, and those results remain unchanged in [runs/v1_bird_seed41](runs/v1_bird_seed41). A pure-additive 40-term diagnostic showed that its noisy recursive KM search can discard a function that fits in the 50-branch budget. v2 fixes the **reader**, without changing the original image, CNN checkpoint or v1 measurements.
+
+v2 directly estimates **all 64 single-piece and 2,016 pairwise interactions** on uniform masks, chooses a candidate graph without supplied spatial geometry, jointly refits its coefficients and compares it with the 50-term local-geometry baseline. It uses distinct *discovery → fitting → validation → held-out tests*, preserves p=.5/.75/.9 retention shifts, and stores teacher queries for safe restart. There is an optional independent full triple scan, pure-triple regression test and legacy coordinate-order diagnostic.
+
+**No v2 CIFAR results are claimed until you run them on the trained CNN.** [PREREG_V2.md](PREREG_V2.md) locks the new test gates separately from v1. v2 is still a functional surrogate for **one selected image**, not a reconstruction of the CNN's hidden mechanism.
+
+### Run v2 on your already-trained CNN (no re-download or retraining)
+
+~~~powershell
+git pull
+python3.13 -m unittest discover -s tests -v
+python3.13 run_v2.py --mode synthetic
+python3.13 run_v2.py --mode cifar --device cuda
+~~~
+
+The default output is runs/v2_bird_seed41/results.json and runs/v2_bird_seed41/report.html. It reads the saved checkpoint at runs/checkpoints/cifar_tiny_cnn.pt and uses the already downloaded CIFAR data. If interrupted, run the same command: cached split responses and completed zero/mean conditions are reused. No overwrite flag or second training command is necessary.
+
+Other exploratory probes (distinct output folders):
+
+~~~powershell
+python3.13 run_v2.py --mode legacy
+python3.13 run_v2.py --mode cifar --device cuda --readout raw --out runs/v2_raw_bird_seed41
+python3.13 run_v2.py --mode cifar --device cuda --scan-triples --out runs/v2_triples_bird_seed41
+~~~
+
+The last option scans 41,664 triples and may be CPU-intensive; it does not require surviving pairs. The raw readout isolates the bird logit from moving-class competition; its results are separate.
+
+---
+
 ## How to run at home
 
 On Windows, install a compatible CUDA-enabled PyTorch and torchvision pair using the command recommended by [PyTorch](https://pytorch.org/get-started/locally/) for your machine. Python 3.10+ is recommended. Then:

@@ -20,3 +20,5 @@ jobs:
         run: python run.py --mode smoke
       - name: v2 distributed-additive synthetic gate
         run: python run_v2.py --mode synthetic
+      - name: v3 p-biased Walsh synthetic gate
+        run: python run_v3.py --mode synthetic

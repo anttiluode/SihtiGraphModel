@@ -32,7 +32,7 @@ def fit_fourier(z: np.ndarray, scores: np.ndarray, subsets: list[tuple[int, ...]
     terms = []
     for s in sorted(set(tuple(sorted(s)) for s in subsets)):
         if s:
-            terms.append({'indices': list(s), 'coefficient': float(np.mean(centered * parity(z, s)))})
+            terms.append({'indices': [int(i) for i in s], 'coefficient': float(np.mean(centered * parity(z, s)))})
     return sorted(terms, key=lambda t: -abs(t['coefficient']))[:top]
 
 

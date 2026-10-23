@@ -10,6 +10,27 @@ from sihtigraph.walsh import (fit_fourier, km_search, local_pairs, metrics,
                               parity, predict, random_masks, r2)
 
 
+
+def _json_native(value):
+    """Convert NumPy scalars/arrays to standard JSON without altering gates."""
+    if isinstance(value, np.integer):
+        return int(value)
+    if isinstance(value, np.floating):
+        return float(value)
+    if isinstance(value, np.bool_):
+        return bool(value)
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    raise TypeError(f'Unsupported result field type: {type(value).__name__}')
+
+
+def write_results(path: Path, payload: dict) -> None:
+    """Serialize fully before replacing the receipt, so failures leave no partial JSON."""
+    serialized = json.dumps(payload, indent=2, allow_nan=False, default=_json_native) + '\n'
+    path.write_text(serialized, encoding='utf-8')
+
+
+
 def make_report(payload: dict, path: Path):
     def num(x): return 'n/a' if x is None else f'{x:.3f}'
     def table(row):
@@ -157,7 +178,7 @@ def run_distillation(args, out: Path):
             k=len(t['indices'])
             if k==0:continue
             for _ in range(200):
-                s=tuple(sorted(rng.choice(64,size=k,replace=False)))
+                s=tuple(sorted(int(i) for i in rng.choice(64,size=k,replace=False)))
                 if s not in existing and s not in rand_subsets:break
             rand_subsets.append(s)
         random_graph=fit_fourier(zfit,yfit,rand_subsets,len(graph),intercept)
@@ -190,7 +211,7 @@ def run_distillation(args, out: Path):
                'teacher_calibration_mean':intercept,'teacher_oracle':oracle.summary(),'gates':gate}
         payload['distillation'][replacement]=entry
         out.mkdir(parents=True,exist_ok=True)
-        (out/'results.json').write_text(json.dumps(payload,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+        write_results(out/'results.json', payload)
         make_report(payload,out/'report.html')
         print(f'[{replacement}] R2(graph/linear/pair)={graph_r2}/{linear_r2}/{baseline["local_pair50"]["r2"]}; {len(graph)} branches, {oracle.calls:,} model forwards',flush=True)
     return payload

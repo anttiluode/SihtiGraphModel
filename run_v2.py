@@ -71,17 +71,28 @@ class StageCache:
             with np.load(path,allow_pickle=False) as f:
                 cached_z=f['z']
                 y=f['y']
+                clipped=int(f['clipped_pixels']) if 'clipped_pixels' in f.files else None
+                total=int(f['total_pixels']) if 'total_pixels' in f.files else None
             if cached_z.shape != z.shape or not np.array_equal(cached_z,z) or y.shape!=(nrows,) or not np.isfinite(y).all():
                 raise ValueError(f'{path}: cached responses disagree with current masks; use a distinct --out')
+            if hasattr(oracle,'clipped_pixels'):
+                if clipped is None or total is None:
+                    raise ValueError(f'{path}: cache lacks clipping counters; use a fresh --out')
+                oracle.clipped_pixels+=clipped
+                oracle.total_pixels+=total
             self.loaded+=nrows
             print(f'  {stage}: loaded {nrows:,} cached teacher responses',flush=True)
             return z,np.asarray(y,dtype=np.float64)
+        before_clip=int(getattr(oracle,'clipped_pixels',0))
+        before_total=int(getattr(oracle,'total_pixels',0))
         y=np.asarray(oracle(z),dtype=np.float64).reshape(-1)
         if y.shape != (nrows,) or not np.isfinite(y).all():
             raise ValueError(f'{stage}: nonfinite or malformed teacher responses')
+        delta_clip=int(getattr(oracle,'clipped_pixels',0))-before_clip
+        delta_total=int(getattr(oracle,'total_pixels',0))-before_total
         tmp=path.with_name(path.name+'.tmp')
         with tmp.open('wb') as fp:
-            np.savez_compressed(fp,z=z,y=y)
+            np.savez_compressed(fp,z=z,y=y,clipped_pixels=delta_clip,total_pixels=delta_total)
         os.replace(tmp,path)
         self.queried+=nrows
         print(f'  {stage}: queried and cached {nrows:,} teacher responses',flush=True)

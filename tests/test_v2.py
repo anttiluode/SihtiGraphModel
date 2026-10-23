@@ -97,6 +97,32 @@ class V2ReaderTests(unittest.TestCase):
                 third=StageCache(root,identity)
                 third.read('selection',123,seed,oracle)
 
+    def test_cache_restores_clipping_counts_after_restart(self):
+        class ClippingOracle:
+            def __init__(self):
+                self.clipped_pixels=0
+                self.total_pixels=0
+                self.calls=0
+            def __call__(self,z):
+                self.calls+=len(z)
+                self.clipped_pixels+=len(z)*3
+                self.total_pixels+=len(z)*12
+                return np.asarray(z[:,0],dtype=float)
+        with tempfile.TemporaryDirectory() as tmp:
+            first=ClippingOracle()
+            args={'checkpoint_sha256':'check','image_sha256':'image','replacement':'zero'}
+            cache=StageCache(Path(tmp),args)
+            cache.read('test_p50',200,41,first)
+            self.assertEqual(first.calls,200)
+            self.assertEqual(first.clipped_pixels/first.total_pixels,.25)
+            restored=ClippingOracle()
+            another=StageCache(Path(tmp),args)
+            another.read('test_p50',200,41,restored)
+            self.assertEqual(restored.calls,0)
+            self.assertEqual(restored.clipped_pixels,600)
+            self.assertEqual(restored.total_pixels,2400)
+            self.assertEqual(another.loaded,200)
+
     def test_offline_report_renders_complete_v2_receipt(self):
         from run_v2 import html_report, write_json, pretty
         rng=np.random.default_rng(33)

@@ -1,0 +1,18 @@
+{
+  "version": "v2_direct_1",
+  "checkpoint_sha256": "ac2c8fc2809fb32be5ea36a6b136cf9cd6c989082c995737f5ae462f0cb65a42",
+  "image_sha256": "30efe8ede3c2764d7b0626798ae3745ad2b8128267e472e7c72fd705c0542a6b",
+  "image_index": 65,
+  "class_id": 2,
+  "seed": 41,
+  "readout": "margin",
+  "fixed_competitor": 3,
+  "replacement": "both",
+  "selection": 20000,
+  "fit": 8192,
+  "validation": 4096,
+  "test": 4096,
+  "max_terms": 50,
+  "scan_triples": false,
+  "ridge": 0.0001
+}
